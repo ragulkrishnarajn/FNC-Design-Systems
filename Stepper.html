@@ -22,6 +22,7 @@
       <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
       <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
+      
    </head>
    <body>
       <!-- ======= Header ======= -->
@@ -194,46 +195,45 @@
                      </a>
                   </li>
                   <li>
-                     <a href="Banner.html" class="active">
+                     <a href="Banner.html" >
                      <span>Banner</span>
                      </a>
                   </li>
                   <li>
-                    <a href="Blanket.html">
-                    <span>Blanket</span>
-                    </a>
-                 </li>
-                 <li>
-                  <a href="Breadcrumb.html">
-                  <span>Breadcrumb</span>
-                  </a>
-               </li>
-             
-               <li>
-                  <a href="Toggle.html">
-                  <span>Toggle</span>
-                  </a>
-               </li>
-               <li>
-                  <a href="Tab.html" >
-                  <span>Tabs</span>
-                  </a>
-               </li>
-               <li>
-                  <a href="Spinner.html">
-                  <span>Spinner</span>
-                  </a>
-               </li>
-               <li>
-                  <a href="Progress-Bar.html" >
-                  <span>Progress Bar</span>
-                  </a>
-               </li>
-               <li>
-                  <a href="Stepper.html">
-                  <span>Stepper</span>
-                  </a>
-               </li>
+                     <a href="Blanket.html">
+                     <span>Blanket</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Breadcrumb.html">
+                     <span>Breadcrumb</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Toggle.html" >
+                     <span>Toggle</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Tab.html">
+                     <span>Tabs</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Spinner.html">
+                     <span>Spinner</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Progress-Bar.html">
+                     <span>Progress Bar</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Stepper.html" class="active" >
+                     <span>Stepper</span>
+                     </a>
+                  </li>
                </ul>
             </li>
             <li class="nav-item">
@@ -284,12 +284,12 @@
       <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>Banner</h1>
+            <h1>Stepper</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">Banner</li>
+                  <li class="breadcrumb-item active">Stepper</li>
                </ol>
             </nav>
          </div>
@@ -309,34 +309,180 @@
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="row">
-                              <div class="col-lg-12">
-                                 <div class="alert alert-warning alert-dismissible fade show custom-banner text-center" role="alert">
-                                    <img class="custom-icon-banner" src="assets/img/WarningIcon.svg">
-                                    This is Warning.
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              <div class="col-lg-5">
+                                 <div class="card">
+                                    <div class="card-body">
+                                       <h5 class="card-title">Vertical Stepper</h5>
+
+                                       <div class="order-track">
+                                        <div class="order-track-step">
+                                          <div class="order-track-status">
+                                            <span class="order-track-status-dot">1</span>
+                                            <span class="order-track-status-line"></span>
+                                          </div>
+                                          <div class="order-track-text">
+                                            <p class="order-track-text-stat">Step 1</p>
+                                            <span class="order-track-text-sub">Step Description</span>
+                                          </div>
+                                        </div>
+                                        <div class="order-track-step">
+                                          <div class="order-track-status">
+                                            <span class="order-track-status-dot">2</span>
+                                            <span class="order-track-status-line"></span>
+                                          </div>
+                                          <div class="order-track-text">
+                                            <p class="order-track-text-stat">Step 2</p>
+                                            <span class="order-track-text-sub">Step Description</span>
+                                          </div>
+                                        </div>
+                                        <div class="order-track-step">
+                                          <div class="order-track-status">
+                                            <span class="order-track-status-dot">3</span>
+                                            <span class="order-track-status-line"></span>
+                                          </div>
+                                          <div class="order-track-text">
+                                            <p class="order-track-text-stat">Step 3</p>
+                                            <span class="order-track-text-sub">Step Description</span>
+                                          </div>
+                                        </div>
+                                        <div class="order-track-step">
+                                          <div class="order-track-status">
+                                            <span class="order-track-status-dot ongoing ">4</span>
+                                            <span class="order-track-status-line"></span>
+                                          </div>
+                                          <div class="order-track-text">
+                                            <p class="order-track-text-stat">Step 4</p>
+                                            <span class="order-track-text-sub">Step Description</span>
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                    </div>
                                  </div>
                               </div>
-                              <div class="col-lg-12">
-                                 <div class="alert alert-primary alert-dismissible fade show custom-banner text-center" role="alert">
-                                    <img class="custom-icon-banner" src="assets/img/InfoIcon.svg">
-                                    This is Some info.
-                                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+
+                              <div class="col-lg-7">
+                                 <div class="card">
+                                    <div class="card-body">
+                                       <h5 class="card-title">Vertical Stepper Timeline</h5>
+
+                                       <div class="order-track">
+                                        <div class="order-track-step">
+                                            <div class="order-track-text">
+                                                <p class="order-track-text-stat">1 Nov 2022, 12.00 AM</p>
+                                              </div>
+
+                                          <div class="order-track-status">
+                                            <span class="order-track-status-dot">1</span>
+                                            <span class="order-track-status-line"></span>
+                                          </div>
+                                          <div class="order-track-text">
+                                            <p class="order-track-text-stat">Step 1</p>
+                                            <span class="order-track-text-sub">Step Description</span>
+                                          </div>
+                                        </div>
+                                        
+                                        
+
+                                        <div class="order-track-step">
+                                            <div class="order-track-text">
+                                                <p class="order-track-text-stat">1 May 2022, 12.00 AM</p>
+                                              </div>
+                                            <div class="order-track-status">
+                                              <span class="order-track-status-dot">2</span>
+                                              <span class="order-track-status-line"></span>
+                                            </div>
+                                            <div class="order-track-text">
+                                              <p class="order-track-text-stat">Step 2</p>
+                                              <span class="order-track-text-sub">Step Description</span>
+                                            </div>
+                                          </div>
+
+                                          <div class="order-track-step">
+                                            <div class="order-track-text">
+                                                <p class="order-track-text-stat">1 Dec 2022, 12.00 AM</p>
+                                              </div>
+                                            <div class="order-track-status">
+                                              <span class="order-track-status-dot ongoing">3</span>
+                                              <span class="order-track-status-line ongoing"></span>
+                                            </div>
+                                            <div class="order-track-text">
+                                              <p class="order-track-text-stat ">Step 3</p>
+                                              <span class="order-track-text-sub">Step Description</span>
+                                            </div>
+                                          </div>
+                                          <div class="order-track-step">
+                                            <div class="order-track-text">
+                                                <p class="order-track-text-stat">1 May 2022, 12.00 AM
+
+                                                </p>
+                                              </div>
+                                            <div class="order-track-status">
+                                              <span class="order-track-status-dot ongoing ">4</span>
+                                              <span class="order-track-status-line"></span>
+                                            </div>
+                                            <div class="order-track-text">
+                                              <p class="order-track-text-stat">Step 4</p>
+                                              <span class="order-track-text-sub">Step Description</span>
+                                            </div>
+                                          </div>
+
+
+                                    
+                                        
+                                      </div>
+
+
+                                    </div>
                                  </div>
                               </div>
+
                               <div class="col-lg-12">
-                                 <div class="alert alert-danger alert-dismissible fade show custom-banner text-center" role="alert">
-                                    <img class="custom-icon-banner" src="assets/img/warning-white.svg">
-                                    The apocalypse is coming and zombies are on the loose..
-                                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+                                 <div class="card">
+                                    <div class="card-body">
+                                       <h5 class="card-title">Horizontal Stepper</h5>
+
+                                       <div class="md-stepper-horizontal Horizontal">
+                                          <div class="md-step active">
+                                          <div class="md-step-circle"><span>1</span></div>
+                                          <div class="md-step-title">Step 1</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step active">
+                                          <div class="md-step-circle"><span>2</span></div>
+                                          <div class="md-step-title">Step 2</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step active">
+                                          <div class="md-step-circle"><span>3</span></div>
+                                          <div class="md-step-title">Step 3</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        
+                                        <div class="md-step active">
+                                          <div class="md-step-circle"><span>4</span></div>
+                                          <div class="md-step-title">Step 4</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                        <div class="md-step">
+                                          <div class="md-step-circle"><span>5</span></div>
+                                          <div class="md-step-title">Step 5</div>
+                                          <div class="md-step-bar-left"></div>
+                                          <div class="md-step-bar-right"></div>
+                                        </div>
+                                      </div>
+
+
+                                    </div>
                                  </div>
                               </div>
-                              <div class="col-lg-12">
-                                 <div class="alert alert-success alert-dismissible fade show custom-banner text-center" role="alert">
-                                    <img class="custom-icon-banner" src="assets/img/SuccessIcon.svg">
-                                    This is a success message.
-                                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
-                                 </div>
-                              </div>
+
+
                            </div>
                         </div>
                         <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -369,7 +515,6 @@
          </section>
       </main>
       <!-- End #main -->
-      <!-- ======= Footer ======= -->
       <footer id="footer" class="footer">
          <div class="copyright">
             &copy; Copyright <strong><span>FNC Fujitsu</span></strong>. All Rights Reserved

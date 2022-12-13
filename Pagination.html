@@ -22,6 +22,7 @@
       <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
       <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
+        
    </head>
    <body>
       <!-- ======= Header ======= -->
@@ -204,11 +205,11 @@
                      </a>
                   </li>
                   <li>
-                     <a href="Breadcrumb.html" class="active">
+                     <a href="Breadcrumb.html">
                      <span>Breadcrumb</span>
                      </a>
                   </li>
-                
+                 
                   <li>
                      <a href="Toggle.html">
                      <span>Toggle</span>
@@ -239,15 +240,15 @@
                      <span>Modal Dialogue</span>
                      </a>
                   </li>
+                  
                   <li>
-                     <a href="Pagination.html">
-                     <span>Pagination</span>
-                     </a>
-                  </li>
-                
+                    <a href="Pagination.html" class="active">
+                    <span>Pagination</span>
+                    </a>
+                 </li>
+               
                </ul>
             </li>
-            
             <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
                <i class="bi bi-menu-button-wide"></i><span>Button</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -285,8 +286,9 @@
                   </li>
                </ul>
             </li>
+
             <li class="nav-item">
-               <a class="nav-link collapsed " href="Login-Page.html">
+               <a class="nav-link collapsed" href="Login-Page.html">
                <i class="bi bi-box-arrow-in-right"></i>
                <span>Login</span>
                </a>
@@ -297,17 +299,18 @@
                <span>Typography</span>
                </a>
             </li>
+
          </ul>
       </aside>
       <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>Breadcrumb</h1>
+            <h1>Pagination</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">Breadcrumb</li>
+                  <li class="breadcrumb-item active">Pagination</li>
                </ol>
             </nav>
          </div>
@@ -326,24 +329,123 @@
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
-                           <div class="row pt-3">
-                              <nav aria-label="breadcrumb">
-                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Standard breadcrumb</a></li>
-                                    <li class="breadcrumb-item"        aria-current="page">Text with separator</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Text with separator</li>
-                                 </ol>
-                              </nav>
-                              <br>
-                              <br>
-                              <nav aria-label="row breadcrumb">
-                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Standard breadcrumb</a></li>
-                                    <li class="breadcrumb-item col-1 text-truncate"        aria-current="page">Text with separator</li>
-                                    <li class="breadcrumb-item col-1 text-truncate"        aria-current="page">Text with separator</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Text with separator</li>
-                                 </ol>
-                              </nav>
+                           <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                      
+                                    <!-- Pagination with icons -->
+                                    <nav aria-label="Page navigation example">
+                                      <ul class="pagination flex-wrap ml-3">
+                                        <li class="page-item">
+                                          <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true"><</span>
+                                          </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+                                        <li class="page-item">
+                                          <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">></span>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </nav><!-- End Pagination with icons -->
+                      
+
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination flex-wrap ml-3">
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                              <span aria-hidden="true"><</span>
+                                            </a>
+                                          </li>
+                                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">8</a></li>
+
+                                          <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">19</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">20</a></li>
+
+                                          <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                              <span aria-hidden="true">></span>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+
+                                  </div>
+                                </div>
+                      
+                                   
+                      
+                              </div>
+
+
+
+                              <div class="col-lg-12">
+
+                                <div class="card">
+                                  <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                      
+                      
+
+                                      <div class="dataTables_length" id="example_length">
+                                        <label>Show <select name="example_length" aria-controls="example" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> Rows of 30</label>
+                                    
+                                        <nav aria-label="row-pagination Page navigation example ">
+                                            <ul class="pagination flex-wrap ml-3">
+                                              <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                  <span aria-hidden="true"><</span>
+                                                </a>
+                                              </li>
+                                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">10</a></li>
+      
+                                              <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                  <span aria-hidden="true">></span>
+                                                </a>
+                                              </li>
+                                            </ul>
+                                          </nav><!-- End Pagination with icons -->
+                            
+                                    
+                                    
+                                    
+                                    </div>
+
+                                  </div>
+                                </div>
+                      
+                                   
+                      
+                              </div>
+
+                              
+                            
                            </div>
                         </div>
                         <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -376,6 +478,7 @@
          </section>
       </main>
       <!-- End #main -->
+      <!-- ======= Footer ======= -->
       <footer id="footer" class="footer">
          <div class="copyright">
             &copy; Copyright <strong><span>FNC Fujitsu</span></strong>. All Rights Reserved

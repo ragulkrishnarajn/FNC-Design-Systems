@@ -159,11 +159,13 @@
             </li>
             <!-- End Dashboard Nav -->
             <li class="nav-item">
-               <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+               <a class="nav-link collapsed " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                <i class="bi bi-x-diamond-fill"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
-                  <li>
+               <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+                
+                <li>
                      <a href="Flag.html">
                      <span>Flag</span>
                      </a>
@@ -204,11 +206,10 @@
                      </a>
                   </li>
                   <li>
-                     <a href="Breadcrumb.html" class="active">
+                     <a href="Breadcrumb.html">
                      <span>Breadcrumb</span>
                      </a>
                   </li>
-                
                   <li>
                      <a href="Toggle.html">
                      <span>Toggle</span>
@@ -251,7 +252,6 @@
                   </li>
                </ul>
             </li>
-            
             <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
                <i class="bi bi-menu-button-wide"></i><span>Button</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -301,29 +301,32 @@
                <span>Typography</span>
                </a>
             </li>
+
             <li class="nav-item">
-               <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
+               <a class="nav-link collapse" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
                  <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
-                  <li>
-                   <a href="General-Table.html">
+               <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+                 <li>
+                   <a href="General-Table.html" class="active">
                     <span>General Tables</span>
                    </a>
                  </li>
+                
                </ul>
              </li>
+
          </ul>
       </aside>
       <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>Breadcrumb</h1>
+            <h1>General Table</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">Breadcrumb</li>
+                  <li class="breadcrumb-item active">General Table</li>
                </ol>
             </nav>
          </div>
@@ -342,24 +345,239 @@
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
-                           <div class="row pt-3">
-                              <nav aria-label="breadcrumb">
-                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Standard breadcrumb</a></li>
-                                    <li class="breadcrumb-item"        aria-current="page">Text with separator</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Text with separator</li>
-                                 </ol>
-                              </nav>
-                              <br>
-                              <br>
-                              <nav aria-label="row breadcrumb">
-                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Standard breadcrumb</a></li>
-                                    <li class="breadcrumb-item col-1 text-truncate"        aria-current="page">Text with separator</li>
-                                    <li class="breadcrumb-item col-1 text-truncate"        aria-current="page">Text with separator</li>
-                                    <li class="breadcrumb-item active" aria-current="page">Text with separator</li>
-                                 </ol>
-                              </nav>
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Basic Table</h4>
+                                        <p class="card-description"> Add class <code>.table</code>
+                                        </p>
+                                        <div class=" table-responsive">
+
+                                        <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>Name</th>
+                                              <th>ID No</th>
+                                              <th>Created</th>
+                                              <th>Status</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>Jacob</td>
+                                              <td>53275531</td>
+                                              <td>15 Dec 2022</td>
+                                              <td><label class="badge bg-info text-dark">Completed</label></td>
+                                            </tr>
+                                            <tr>
+                                              <td>Messsy</td>
+                                              <td>53275532</td>
+                                              <td>15 Dec 2022</td>
+                                              <td><label class="badge bg-warning text-dark">In progress</label></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Messsy Ronald</td>
+                                                <td>53275532</td>
+                                                <td>15 Dec 2022</td>
+                                                <td><label class="badge bg-light text-dark">Fixed</label></td>
+                                              </tr>
+                                              
+                                              <tr>
+                                                <td>Messsy Ronald</td>
+                                                <td>53275532</td>
+                                                <td>16 Dec 2022</td>
+                                                <td><label class="badge bg-warning   text-dark">In progress</label></td>
+                                              </tr>
+                                              
+                                              <tr>
+                                                <td>Messsy Ronald</td>
+                                                <td>53275532</td>
+                                                <td>17 Dec 2022</td>
+                                                <td><label class="badge bg-info text-dark"><i class="bi bi-exclamation-triangle me-1"></i>On Hold</label></td>
+                                              </tr>
+                                        
+                                          </tbody>
+                                        </table>
+                                        </div>
+                                      </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="card">
+                                   <div class="card-body">
+                                       <h4 class="card-title"> Hoverable Table </h4>
+                                       <p class="card-description"> Add class <code>.table-hover</code>
+                                       </p>
+                                       <div class=" table-responsive">
+
+                                       <table class="table table-hover">
+                                         <thead>
+                                           <tr>
+                                             <th>Profile</th>
+                                             <th>Cab No</th>
+                                             <th>Created</th>
+                                             <th>Status</th>
+                                           </tr>
+                                         </thead>
+                                         <tbody>
+                                           <tr>
+                                             <td>Jacob</td>
+                                             <td>53275531</td>
+                                             <td>15 Dec 2022</td>
+                                             <td><label class="badge bg-info text-dark">Completed</label></td>
+                                           </tr>
+                                           <tr>
+                                             <td>Messsy</td>
+                                             <td>53275532</td>
+                                             <td>15 Dec 2022</td>
+                                             <td><label class="badge bg-warning text-dark">In progress</label></td>
+                                           </tr>
+                                           <tr>
+                                               <td>Messsy Ronald</td>
+                                               <td>53275532</td>
+                                               <td>15 Dec 2022</td>
+                                               <td><label class="badge bg-light text-dark">Fixed</label></td>
+                                             </tr>
+                                             
+                                             <tr>
+                                               <td>Messsy Ronald</td>
+                                               <td>53275532</td>
+                                               <td>16 Dec 2022</td>
+                                               <td><label class="badge bg-warning   text-dark">In progress</label></td>
+                                             </tr>
+                                             
+                                             <tr>
+                                               <td>Messsy Ronald</td>
+                                               <td>53275532</td>
+                                               <td>17 Dec 2022</td>
+                                               <td><label class="badge bg-info text-dark"><i class="bi bi-exclamation-triangle me-1"></i>On Hold</label></td>
+                                             </tr>
+                                       
+                                         </tbody>
+                                       </table>
+                                       </div>
+                                     </div>
+                                </div>
+                             </div>
+
+                             <div class="col-lg-12">
+                                <div class="card">
+                                   <div class="card-body">
+                                       <h4 class="card-title"> Striped Table  </h4>
+                                       <p class="card-description"> Add class <code>.table-striped</code>
+                                       </p>
+                                      <div class=" table-responsive">
+                                       <table class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th> User </th>
+                                            <th> First name </th>
+                                            <th> Progress </th>
+                                            <th> Amount </th>
+                                            <th> Deadline </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-2.png" alt="image">
+                                            </td>
+                                            <td> Herman Beck </td>
+                                            <td class="align-middle">
+                                              <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $ 77.99 </td>
+                                            <td> Dec 15, 2022 </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-3.png" alt="image">
+                                            </td>
+                                            <td> Messsy Adam </td>
+                                            <td>
+                                              <div class="progress">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $245.30 </td>
+                                            <td> Dec 1, 2022 </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-4.png" alt="image">
+                                            </td>
+                                            <td> John Richards </td>
+                                            <td class="align-middle">
+                                              <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $138.00 </td>
+                                            <td> November 12, 2022 </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-1.png" alt="image">
+                                            </td>
+                                            <td> Peter Meggik </td>
+                                            <td class="align-middle">
+                                              <div class="progress">
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $ 77.99 </td>
+                                            <td> November 15, 2022 </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-2.png" alt="image">
+                                            </td>
+                                            <td> Edward </td>
+                                            <td class="align-middle">
+                                              <div class="progress">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $ 160.25 </td>
+                                            <td> October 03, 22022 </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-4.png" alt="image">
+                                            </td>
+                                            <td> John Doe </td>
+                                            <td class="align-middle">
+                                              <div class="progress">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $ 123.21 </td>
+                                            <td> October 05, 2022 </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="py-1">
+                                              <img src="assets/img/pic-3.png" alt="image">
+
+                                              
+                                            </td>
+                                            <td> Henry Tom </td>
+                                            <td class="align-middle">
+                                              <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                              </div>
+                                            </td>
+                                            <td> $ 150.00 </td>
+                                            <td> October 16, 2022 </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                     </div>
+                                </div>
+                             </div>
                            </div>
                         </div>
                         <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -392,6 +610,7 @@
          </section>
       </main>
       <!-- End #main -->
+      <!-- ======= Footer ======= -->
       <footer id="footer" class="footer">
          <div class="copyright">
             &copy; Copyright <strong><span>FNC Fujitsu</span></strong>. All Rights Reserved

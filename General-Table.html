@@ -373,7 +373,7 @@
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="row">
-                              <div class="col-lg-12">
+                              <!-- <div class="col-lg-12">
                                  <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title">Basic Table</h4>
@@ -429,8 +429,8 @@
                                         </div>
                                       </div>
                                  </div>
-                              </div>
-                              <div class="col-lg-12">
+                              </div> -->
+                              <!-- <div class="col-lg-12">
                                 <div class="card">
                                    <div class="card-body">
                                        <h4 class="card-title"> Hoverable Table </h4>
@@ -486,119 +486,319 @@
                                        </div>
                                      </div>
                                 </div>
-                             </div>
+                             </div> -->
 
                              <div class="col-lg-12">
                                 <div class="card">
                                    <div class="card-body">
-                                       <h4 class="card-title"> Striped Table  </h4>
-                                       <p class="card-description"> Add class <code>.table-striped</code>
-                                       </p>
-                                      <div class=" table-responsive">
-                                       <table class="table table-striped">
-                                        <thead>
+                                       <br>
+                                      <div class="table-responsive">
+                                       <table class="table table-bordered">
+                                        <thead class="bordered">
                                           <tr>
-                                            <th> User </th>
-                                            <th> First name </th>
-                                            <th> Progress </th>
-                                            <th> Amount </th>
-                                            <th> Deadline </th>
+                                            <th>
+                                             <div class="text-center">
+                                                <input class="form-check-input mt-0" type="checkbox" value="" id="flexCheckIndeterminates">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                   
+                                                </label>
+                                              </div>
+                                          </th>
+                                            <th> Alarm Severity </th>
+                                            <th> NE ID </th>
+                                            <th> AID Type </th>
+                                            <th> AID </th>
+                                            <th> Alarm Description </th>
+                                            <th> EMS Date Time </th>
+                                            <th> NE Date Time </th>
+                                            <th> Service Effect </th>
+                                            <th> Location </th>
+                                            <th> Direction </th>
+                                            <th> Acknowledg User </th>
+                                            <th class="white-space"> Date & Time Of Acknowledgment </th>
+                                            <th> Actions </th>
+
+
                                           </tr>
                                         </thead>
                                         <tbody>
                                           <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-2.png" alt="image">
-                                            </td>
-                                            <td> Herman Beck </td>
-                                            <td class="align-middle">
-                                              <div class="progress">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                             <td>
+                                             <div class="text-center">
+                                                <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
                                               </div>
-                                            </td>
-                                            <td> $ 77.99 </td>
-                                            <td> Dec 15, 2022 </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-3.png" alt="image">
-                                            </td>
-                                            <td> Messsy Adam </td>
+                                             </td>
+                                             <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                            <td>167.254.214.42 </td>
+                                            <td> Port</td>
+                                            <td> S100</td>
+                                            <td> Lorem Ipsum</td>
+                                            <td> 1/4/2023</td>
+                                            <td> 1/4/2023</td>
+                                            <td> Yes</td>
+                                            <td> NA</td>
+                                            <td> NA</td>
+                                            <td> Admin</td>
+                                            <td> 2/1/2023</td>
                                             <td>
-                                              <div class="progress">
-                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
-                                            </td>
-                                            <td> $245.30 </td>
-                                            <td> Dec 1, 2022 </td>
-                                          </tr>
+                                             <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                            <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                         </td>                                          </tr>
+                                          
                                           <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-4.png" alt="image">
-                                            </td>
-                                            <td> John Richards </td>
-                                            <td class="align-middle">
-                                              <div class="progress">
-                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                             <td>
+                                                <div class="text-center">
+                                                   <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                                                 </div>
+                                                </td>
+                                             <td> <span><img class="table-icon" src="assets/img/info.svg"></span> Minor</td>
+                                             <td>167.254.214.42 </td>
+                                             <td> Port</td>
+                                             <td> S100</td>
+                                             <td> Lorem Ipsum</td>
+                                             <td> 1/4/2023</td>
+                                             <td> 1/4/2023</td>
+                                             <td> Yes</td>
+                                             <td> NA</td>
+                                             <td> NA</td>
+                                             <td> Admin</td>
+                                             <td> 2/1/2023</td>
+                                             <td>
+                                                <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                               <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                            </td>                                           </tr>
+                               
+                                           <tr>
+                                             <td>
+                                                <div class="text-center">
+                                                   <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                                                 </div>
+                                                </td>
+                                             <td> <span><img class="table-icon" src="assets/img/section-info.svg"></span> Warning</td>
+                                             <td>167.254.214.42 </td>
+                                             <td> Port</td>
+                                             <td> S100</td>
+                                             <td> Lorem Ipsum</td>
+                                             <td> 1/4/2023</td>
+                                             <td> 1/4/2023</td>
+                                             <td> Yes</td>
+                                             <td> NA</td>
+                                             <td> NA</td>
+                                             <td> Admin</td>
+                                             <td> 2/1/2023</td>
+                                             <td>
+                                                 <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                             </td>
+                                           </tr>
+                                           <tr>
+                                             <td>
+                                             <div class="text-center">
+                                                <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
                                               </div>
-                                            </td>
-                                            <td> $138.00 </td>
-                                            <td> November 12, 2022 </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-1.png" alt="image">
-                                            </td>
-                                            <td> Peter Meggik </td>
-                                            <td class="align-middle">
-                                              <div class="progress">
-                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
-                                            </td>
-                                            <td> $ 77.99 </td>
-                                            <td> November 15, 2022 </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-2.png" alt="image">
-                                            </td>
-                                            <td> Edward </td>
-                                            <td class="align-middle">
-                                              <div class="progress">
-                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
-                                            </td>
-                                            <td> $ 160.25 </td>
-                                            <td> October 03, 22022 </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-4.png" alt="image">
-                                            </td>
-                                            <td> John Doe </td>
-                                            <td class="align-middle">
-                                              <div class="progress">
-                                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
-                                            </td>
-                                            <td> $ 123.21 </td>
-                                            <td> October 05, 2022 </td>
-                                          </tr>
-                                          <tr>
-                                            <td class="py-1">
-                                              <img src="assets/img/pic-3.png" alt="image">
+                                             </td>
+                                             <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                            <td>167.254.214.42 </td>
+                                            <td> Port</td>
+                                            <td> S100</td>
+                                            <td> Lorem Ipsum</td>
+                                            <td> 1/4/2023</td>
+                                            <td> 1/4/2023</td>
+                                            <td> Yes</td>
+                                            <td> NA</td>
+                                            <td> NA</td>
+                                            <td> Admin</td>
+                                            <td> 2/1/2023</td>
+                                            <td>
+                                             <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                            <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                         </td>                                          </tr>
 
-                                              
-                                            </td>
-                                            <td> Henry Tom </td>
-                                            <td class="align-middle">
-                                              <div class="progress">
-                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                              </div>
-                                            </td>
-                                            <td> $ 150.00 </td>
-                                            <td> October 16, 2022 </td>
-                                          </tr>
+                                         <tr>
+                                          <td>
+                                          <div class="text-center">
+                                             <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                                           </div>
+                                          </td>
+                                          <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                         <td>167.254.214.42 </td>
+                                         <td> Port</td>
+                                         <td> S100</td>
+                                         <td> Lorem Ipsum</td>
+                                         <td> 1/4/2023</td>
+                                         <td> 1/4/2023</td>
+                                         <td> Yes</td>
+                                         <td> NA</td>
+                                         <td> NA</td>
+                                         <td> Admin</td>
+                                         <td> 2/1/2023</td>
+                                         <td>
+                                          <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                         <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                      </td>                                          </tr>
+
+                                      <tr>
+                                       <td>
+                                       <div class="text-center">
+                                          <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                                        </div>
+                                       </td>
+                                       <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                      <td>167.254.214.42 </td>
+                                      <td> Port</td>
+                                      <td> S100</td>
+                                      <td> Lorem Ipsum</td>
+                                      <td> 1/4/2023</td>
+                                      <td> 1/4/2023</td>
+                                      <td> Yes</td>
+                                      <td> NA</td>
+                                      <td> NA</td>
+                                      <td> Admin</td>
+                                      <td> 2/1/2023</td>
+                                      <td>
+                                       <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                   </td>                                          </tr>
+
+                                   <tr>
+                                    <td>
+                                    <div class="text-center">
+                                       <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                                     </div>
+                                    </td>
+                                    <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                   <td>167.254.214.42 </td>
+                                   <td> Port</td>
+                                   <td> S100</td>
+                                   <td> Lorem Ipsum</td>
+                                   <td> 1/4/2023</td>
+                                   <td> 1/4/2023</td>
+                                   <td> Yes</td>
+                                   <td> NA</td>
+                                   <td> NA</td>
+                                   <td> Admin</td>
+                                   <td> 2/1/2023</td>
+                                   <td>
+                                    <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                   <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                </td>                                          </tr>
+
+                                <tr>
+                                 <td>
+                                 <div class="text-center">
+                                    <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                                  </div>
+                                 </td>
+                                 <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                <td>167.254.214.42 </td>
+                                <td> Port</td>
+                                <td> S100</td>
+                                <td> Lorem Ipsum</td>
+                                <td> 1/4/2023</td>
+                                <td> 1/4/2023</td>
+                                <td> Yes</td>
+                                <td> NA</td>
+                                <td> NA</td>
+                                <td> Admin</td>
+                                <td> 2/1/2023</td>
+                                <td>
+                                 <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                             </td>                                          </tr>
+
+                             <tr>
+                              <td>
+                              <div class="text-center">
+                                 <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                               </div>
+                              </td>
+                              <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                             <td>167.254.214.42 </td>
+                             <td> Port</td>
+                             <td> S100</td>
+                             <td> Lorem Ipsum</td>
+                             <td> 1/4/2023</td>
+                             <td> 1/4/2023</td>
+                             <td> Yes</td>
+                             <td> NA</td>
+                             <td> NA</td>
+                             <td> Admin</td>
+                             <td> 2/1/2023</td>
+                             <td>
+                              <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                             <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                          </td>                                          </tr>
+
+                          <tr>
+                           <td>
+                           <div class="text-center">
+                              <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                            </div>
+                           </td>
+                           <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                          <td>167.254.214.42 </td>
+                          <td> Port</td>
+                          <td> S100</td>
+                          <td> Lorem Ipsum</td>
+                          <td> 1/4/2023</td>
+                          <td> 1/4/2023</td>
+                          <td> Yes</td>
+                          <td> NA</td>
+                          <td> NA</td>
+                          <td> Admin</td>
+                          <td> 2/1/2023</td>
+                          <td>
+                           <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                          <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                       </td>                                          </tr>
+
+                       <tr>
+                        <td>
+                        <div class="text-center">
+                           <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                         </div>
+                        </td>
+                        <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                       <td>167.254.214.42 </td>
+                       <td> Port</td>
+                       <td> S100</td>
+                       <td> Lorem Ipsum</td>
+                       <td> 1/4/2023</td>
+                       <td> 1/4/2023</td>
+                       <td> Yes</td>
+                       <td> NA</td>
+                       <td> NA</td>
+                       <td> Admin</td>
+                       <td> 2/1/2023</td>
+                       <td>
+                        <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                       <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                    </td>                                          </tr>
+
+                    <tr>
+                     <td>
+                     <div class="text-center">
+                        <input class="form-check-input mt-0" type="checkbox" id="gridCheck1" checked>
+                      </div>
+                     </td>
+                     <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                    <td>167.254.214.42 </td>
+                    <td> Port</td>
+                    <td> S100</td>
+                    <td> Lorem Ipsum</td>
+                    <td> 1/4/2023</td>
+                    <td> 1/4/2023</td>
+                    <td> Yes</td>
+                    <td> NA</td>
+                    <td> NA</td>
+                    <td> Admin</td>
+                    <td> 2/1/2023</td>
+                    <td>
+                     <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                    <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                 </td>                                          </tr>
+
+                                         
                                         </tbody>
                                       </table>
                                     </div>
@@ -655,5 +855,17 @@
       <script src="assets/vendor/php-email-form/validate.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="assets/js/soft-design-system.min.js"></script>
+      <script>
+         var checkbox = document.getElementById("flexCheckIndeterminate");
+         checkbox.indeterminate = true;
+         $("#flexCheckIndeterminate").prop("indeterminate", true); 
+
+   </script>
+   <script>
+     var checkbox = document.getElementById("flexCheckIndeterminates");
+     checkbox.indeterminate = true;
+     $("#flexCheckIndeterminates").prop("indeterminate", true); 
+
+</script>
    </body>
 </html>

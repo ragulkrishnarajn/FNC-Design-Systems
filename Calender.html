@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -20,7 +21,8 @@
       <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
       <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
       <link href="assets/css/style.css" rel="stylesheet">
-      <link href="assets/css/Calender.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+
 
    </head>
    <body>
@@ -368,25 +370,27 @@
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="">
                               <div class="col-lg-12">
-                                 <div class="">
-                                    <div class=" row card-body">
-                                       <div class="mb-3 mt-2 col-md-6">
-                                          <label for="exampleFormControlInput1" class="form-label">Date</label>
-                                          <div class="">
-                                             <input class="form-control datepicker calendar" placeholder="YYYY/MM/DD" type="date" >
-                                          </div>
+                                 <div class=" row">
+                                    <div class="mb-3 mt-2 col-md-6">
+                                       <label for="exampleFormControlInput1" class="form-label">Form Date</label>
+                                       <div>
+                                          <input class="form-control datepicker calendar" placeholder="YYYY/MM/DD HH:MM"  type="text" >
+                                          
                                        </div>
-                                       <div class="mb-3 mt-2 col-md-6">
-                                          <label for="exampleFormControlInput1" class="form-label">Joinning Date</label>
-                                          <div>
-                                             <input class="form-control datepicker calendar" placeholder="YYYY/MM/DD" type="date" >
-                                             
-                                          </div>
+                                    </div>
+                                    <div class="mb-3 mt-2 col-md-6">
+                                       <label for="exampleFormControlInput2" class="form-label"> Field Date</label>
+                                       <div>
+                                          <input class="form-control datepicker calendar" placeholder="YYYY/MM/DD HH:MM"  type="text" >
+                                          
                                        </div>
+                                    </div>
+                                    
+                                       
 
                                         
                                     </div>
-                                 </div>
+                                 </div>   
                               </div>
                            </div>
                         </div>
@@ -427,21 +431,39 @@
       </footer>
       <!-- End Footer -->
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-      <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/chart.js/chart.min.js"></script>
-      <script src="assets/vendor/echarts/echarts.min.js"></script>
       <script src="assets/vendor/quill/quill.min.js"></script>
-      <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-      <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-      <script src="assets/vendor/php-email-form/validate.js"></script>
       <script src="assets/js/main.js"></script>
-    <script src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/js/plugins/flatpickr.min.js" type="text/javascript"></script>
-      <script>
-         if (document.querySelector(".datepicker")) {
-            flatpickr(".datepicker", {});
-         }
-       </script>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="https://unpkg.com/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/js/soft-design-system.min.js"></script>
+     <script>
+
+    $('.calendar').flatpickr({
+    "locale": 'en',
+    minDate: new Date(),
+    enableTime: true,
+    time_24hr: false,
+    minuteIncrement: 15,
+    onChange: function(selectedDates, dateStr, instance) {
+        var selectedDatesStr = selectedDates.reduce(function(acc, ele) {
+            var str = instance.formatDate(ele, "d/m/Y");
+            acc = (acc == '') ? str : acc + ';' + str;
+            return acc;
+        }, '');
+        instance.set('enable', [function(date) {
+            if (selectedDates.length >= 3) {
+                var currDateStr = instance.formatDate(date, "d/m/Y")
+                var x = selectedDatesStr.indexOf(currDateStr);
+                return x != -1;
+            } else {
+                return true;
+            }
+        }]);
+    }
+});
+       </script>
    </body>
 </html>

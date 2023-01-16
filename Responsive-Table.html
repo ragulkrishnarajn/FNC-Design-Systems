@@ -325,12 +325,12 @@
                </a>
                <ul id="tables-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                   <li>
-                     <a href="General-Table.html" class="active">
+                     <a href="General-Table.html">
                      <span>General Tables</span>
                      </a>
                   </li>
                   <li>
-                     <a href="Responsive-Table.html">
+                     <a href="Responsive-Table.html" class="active">
                      <span>Responsive Tables</span>
                      </a>
                   </li>
@@ -353,12 +353,12 @@
       <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>General Table</h1>
+            <h1>Responsive Table</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">General Table</li>
+                  <li class="breadcrumb-item active">Responsive Table</li>
                </ol>
             </nav>
          </div>
@@ -373,6 +373,12 @@
                         </li>
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="reference-tab" data-bs-toggle="tab" data-bs-target="#reference" type="button" role="tab" aria-controls="reference" aria-selected="false">Reference</button>
                         </li>
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
@@ -399,9 +405,9 @@
                                              <span><img class="table-header-icons" src="assets/img/Action-3.svg"></span>
                                           </div>
                                        </div>
-                                       <div class="table-responsive">
+                                       <div class="responsive-tables">
                                           <table class="table table-bordered">
-                                             <thead class="table-bg">
+                                             <thead class="table-bg no-bg">
                                                 <tr>
                                                    <th>
                                                       <div class="text-center">
@@ -417,557 +423,200 @@
                                                    <th> Alarm Description </th>
                                                    <th> EMS Date Time </th>
                                                    <th> NE Date Time </th>
-                                                   <th> Service Effect </th>
-                                                   <th> Location </th>
-                                                   <th> Direction </th>
-                                                   <th> Acknowledg User </th>
                                                    <th class="white-space"> Date & Time Of Acknowledgment </th>
                                                    <th> Actions </th>
                                                 </tr>
                                              </thead>
-                                             <tbody  class="no-border">
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/info.svg"></span> Minor</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/section-info.svg"></span> Warning</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                                <tr>
-                                                   <td>
-                                                      <div class="text-center">
-                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
-                                                      </div>
-                                                   </td>
-                                                   <td> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
-                                                   <td>167.254.214.42 </td>
-                                                   <td> Port</td>
-                                                   <td> S100</td>
-                                                   <td> Lorem Ipsum</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> 1/4/2023</td>
-                                                   <td> Yes</td>
-                                                   <td> NA</td>
-                                                   <td> NA</td>
-                                                   <td> Admin</td>
-                                                   <td> 2/1/2023</td>
-                                                   <td>
-                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
-                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
-                                                   </td>
-                                                </tr>
-                                             </tbody>
-                                          </table>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="mt-3">
-                                 <div class="dataTables_length row" id="example_length">
-                                    <div class="wrap col-md-8">
-                                       <label>
-                                          Show 
-                                          <select name="example_length" aria-controls="example" class="custom-select custom-select-sm form-control form-control-sm">
-                                             <option value="10">10</option>
-                                             <option value="25">25</option>
-                                             <option value="50">50</option>
-                                             <option value="100">100</option>
-                                          </select>
-                                          Rows of 10
-                                       </label>
-                                       
-                                    </div>
-
-                                    <div class="result col-md-4">
-                                          <nav aria-label="row-pagination Page navigation example ">
-                                             <ul class="pagination flex-wrap ml-3">
-                                                <li class="page-item">
-                                                   <a class="page-link" href="#" aria-label="Previous">
-                                                   <span aria-hidden="true">&lt;</span>
-                                                   </a>
-                                                </li>
-                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                                <li class="page-item">
-                                                   <a class="page-link" href="#" aria-label="Next">
-                                                   <span aria-hidden="true">&gt;</span>
-                                                   </a>
-                                                </li>
-                                             </ul>
-                                          </nav>
-                                       </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-lg-12">
-                                 <div>
-                                    <div>
-                                       <br>
-                                       <div class="table-icon-header">
-                                          <div class="table-header-icons flex-wrap mb-1 d-flex">
-                                             <span class="table-span-date">Dynamic Update:</span>
-                                             <span class="table-span-date mt-2">
-                                                <div class="form-check form-switch mb-0">
-                                                   <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
-                                                   <label class="form-check-label fnt-size" for="flexSwitchCheckChecked">ON</label>
-                                                </div>
-                                             </span>
-                                          </div>
-                                          <div class="table-header-icons flex-wrap mb-1 d-flex">
-                                             <span class="br-left table-span-date">Update on : DD/MM/YYY  &nbsp; HH:MM</span>
-                                             <span class="br-left"><img class="table-header-icons" src="assets/img/Refresh.svg"></span>
-                                             <span><img class="table-header-icons" src="assets/img/Download.svg"></span>
-                                          </div>
-                                       </div>
-                                       <!-- table starts here -->
-                                       <div class="table-responsive">
-                                          <table class="table table-bordered">
-                                             <thead class="table-bg">
-                                                <tr class="tr_attr">
-                                                   <th rowspan="2">Name </th>
-                                                   <th rowspan="2">State</th>
-                                                   <th rowspan="2">Standing Condition</th>
-                                                   <th rowspan="2">Protection Role</th>
-                                                   <th rowspan="2">Operational Status</th>
-                                                   <th class="border-bottom" colspan="2">Swtitching Entity</th>
-                                                   <th class="border-bottom" colspan="2">Source</th>
-                                                   <th class="border-bottom" colspan="2">Target</th>
-                                                   <th rowspan="2" >Protection Level</th>
-                                                   <th rowspan="2" >Protection Type</th>
-                                                   <th rowspan="2" >Central Frequency</th>
-                                                   <th  rowspan="2" >Layer</th>
-                                                </tr>
-                                                <tr>
-                                                   <th>TID</th>
-                                                   <th>AID</th>
-                                                   <th>TID</th>
-                                                   <th>AID</th>
-                                                   <th>TID</th>
-                                                   <th>AID</th>
-                                                </tr>
-                                             </thead>
                                              <tbody>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
-                                                <tr class="tr_attr">
-                                                   <td>AdeKunle</td>
-                                                   <td>Tamilnadu</td>
-                                                   <td>72</td>
-                                                   <td>43</td>
-                                                   <td>78</td>
-                                                   <td>73</td>
-                                                   <td>37</td>
-                                                   <td>1</td>
-                                                   <td>2</td>
-                                                   <td>3</td>
-                                                   <td>4</td>
-                                                   <td>5</td>
-                                                   <td>6</td>
-                                                   <td>7</td>
-                                                   <td>8</td>
+                                                <tr>
+                                                   <td data-title="Checkbox">
+                                                      <div>
+                                                         <input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+                                                      </div>
+                                                   </td>
+                                                   <td data-title="Alarm Severity"> <span><img class="table-icon" src="assets/img/warningflag.svg"></span> Critical</td>
+                                                   <td data-title="NE ID">167.254.214.42 </td>
+                                                   <td data-title="AID Type"> Port</td>
+                                                   <td data-title="AID"> S100</td>
+                                                   <td data-title="Alarm Description"> Lorem Ipsum</td>
+                                                   <td data-title="EMS Date Time"> 1/4/2023</td>
+                                                   <td data-title="NE Date Time"> 1/4/2023</td>
+                                                   <td data-title="Date & Time"> 2/1/2023</td>
+                                                   <td data-title="Actions">
+                                                      <span><img class="action-icon" src="assets/img/Action-2.svg"></span> 
+                                                      <span><img class="action-icon" src="assets/img/Action-1.svg"></span>
+                                                   </td>
                                                 </tr>
                                              </tbody>
                                           </table>
@@ -976,7 +625,7 @@
                                  </div>
                               </div>
                               <div class="mt-3">
-                                 <div class="dataTables_length row" id="example_length">
+                                <div class="dataTables_length row" id="example_length">
                                     <div class="wrap col-md-8">
                                        <label>
                                           Show 
@@ -1040,6 +689,83 @@
                                  </figure>
                               </div>
                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+                            <div class="tab-pane" id="code-typo" role="tabpanel">
+                            <div class="position-relative p-4 pb-2">
+                            <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                            <figure class="highlight">
+                            
+                            <pre class=" language-html">
+                            
+                            <code>
+                                
+@media only screen and (max-width: 820px) {
+    .responsive-tables table, 
+    .responsive-tables thead, 
+    .responsive-tables tbody, 
+    .responsive-tables th, 
+    .responsive-tables td, 
+    .responsive-tables tr { 
+      display: block; 
+    }
+    
+    .no-bg {
+      border: none !important;
+    }
+    
+    .responsive-tables thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    .responsive-tables tr { border: 1px solid #ccc;
+      margin-bottom: 5px; }
+    
+    .responsive-tables td { 
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      padding-left: 50%; 
+      white-space: normal;
+      text-align:left;
+    }
+
+    .responsive-tables td:before { 
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      padding-right: 10px; 
+      white-space: nowrap;
+      text-align:left;
+    }
+    
+    .responsive-tables td:before { content: attr(data-title); }
+    }
+                            </code>
+                            
+                            
+                            </pre>
+                            </figure>
+                            </div>
+                            </div>
+                            </div>
+
+
+                        <div class="tab-pane fade" id="reference" role="tabpanel" aria-labelledby="reference-tab">
+                        <div class="tab-pane" id="code-typo" role="tabpanel">
+                        <div class="position-relative p-4 pb-2">
+                            <h5 class="custom-card">References Sites</h5>
+                        <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                        <figure class="highlight"> 
+                        <pre class=" language-html"><code class=" language-html" data-lang="html"> <br> 
+</span>https://codepen.io/harleyhicks/pen/myapwV<span class="token tag">
+                        </code></pre>
+                        </figure>
+                        </div>
+                        </div>
                         </div>
                      </div>
                   </div>

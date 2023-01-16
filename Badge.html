@@ -1,31 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>FNC Design Systems</title>
+      <title>FNC Design Systems-Button</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
-      <!-- Favicons -->
-      <link href="assets/img/favicon.png" rel="icon">
-      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <link href="https://fonts.gstatic.com" rel="preconnect">
       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
       <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
       <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
       <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
       <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+         
       <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+      <!-- Template Main CSS File -->
       <link href="assets/css/style.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
-
-
    </head>
    <body>
+      <!-- ======= Header ======= -->
       <!-- ======= Header ======= -->
       <header id="header" class="header fixed-top d-flex align-items-center">
          <div class="d-flex align-items-center justify-content-between">
@@ -135,22 +134,11 @@
                         </a>
                      </li>
                   </ul>
-                  <!-- End Profile Dropdown Items -->
                </li>
-               <!-- End Profile Nav -->
             </ul>
          </nav>
-         <!-- End Icons Navigation -->
       </header>
-      <!-- End Header -->
-      <!-- ======= Sidebar ======= -->
       <aside id="sidebar" class="sidebar">
-         <div class="search-bar">
-            <form class="search-form d-flex align-items-center mb-3" method="POST" action="#">
-               <input type="text" name="query" placeholder="Search for UI" title="search for UI">
-               <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-            </form>
-         </div>
          <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
                <a class="nav-link collapsed" href="index.html">
@@ -160,10 +148,10 @@
             </li>
             <!-- End Dashboard Nav -->
             <li class="nav-item">
-               <a class="nav-link collapsed " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+               <a class="nav-link" data-bs-target="#components-navs" data-bs-toggle="collapse" href="#">
                <i class="bi bi-x-diamond-fill"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+               <ul id="components-navs" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
                   <li>
                      <a href="Flag.html">
                      <span>Flag</span>
@@ -189,93 +177,103 @@
                      <span>Checkbox</span>
                      </a>
                   </li>
-                  <li>
-                     <a href="Accordian.html">
-                     <span>Accordian</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Banner.html" >
-                     <span>Banner</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Blanket.html">
-                     <span>Blanket</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Breadcrumb.html">
-                     <span>Breadcrumb</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Toggle.html">
-                     <span>Toggle</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Tab.html" >
-                     <span>Tabs</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Spinner.html">
-                     <span>Spinner</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Progress-Bar.html" >
-                     <span>Progress Bar</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Stepper.html">
-                     <span>Stepper</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Modal-Dialogue.html">
-                     <span>Modal Dialogue</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Pagination.html">
-                     <span>Pagination</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Message.html">
-                     <span>Message</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Textarea.html">
-                     <span>Textarea</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Textfield.html" >
-                     <span>Text Field </span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Calender.html" class="active" >
-                     <span>Calendar </span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Badge.html">
-                     <span>Badge </span>
-                     </a>
-                  </li>
+                  
+                 <li>
+                  <a href="Accordian.html">
+                  <span>Accordian</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Banner.html" >
+                  <span>Banner</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Blanket.html">
+                  <span>Blanket</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Breadcrumb.html">
+                  <span>Breadcrumb</span>
+                  </a>
+               </li>
+             
+               <li>
+                  <a href="Toggle.html">
+                  <span>Toggle</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Tab.html" >
+                  <span>Tabs</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Spinner.html">
+                  <span>Spinner</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Progress-Bar.html" >
+                  <span>Progress Bar</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Stepper.html">
+                  <span>Stepper</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Modal-Dialogue.html">
+                  <span>Modal Dialogue</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Pagination.html">
+                  <span>Pagination</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Message.html">
+                  <span>Message</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Textarea.html">
+                  <span>Textarea</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Textfield.html" >
+                  <span>Text Field </span>
+                  </a>
+               </li>
+               <li>
+                  <a href="Calender.html">
+                  <span>Calendar </span>
+                  </a>
+               </li>
+               <li>
+                <a href="Badge.html" class="active">
+                <span>Badge </span>
+                </a>
+             </li>
                </ul>
             </li>
+            <!-- End Dashboard Nav --> 
+            
+
+
+
+
+
+
             <li class="nav-item">
-               <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
+               <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                <i class="bi bi-menu-button-wide"></i><span>Button</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+               <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                   <li>
                      <a href="Primary-button.html">
                      <span>Primary</span>
@@ -322,22 +320,22 @@
             </li>
             <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
-               <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+                 <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
                <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                   <li>
-                     <a href="General-Table.html">
-                     <span>General Tables</span>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="Responsive-Table.html">
-                     <span>Responsive Tables</span>
-                     </a>
-                  </li>
+                   <a href="General-Table.html">
+                    <span>General Tables</span>
+                   </a>
+                 </li>
+                 <li>
+                  <a href="Responsive-Table.html">
+                  <span>Responsive Tables</span>
+                  </a>
+               </li>
                </ul>
-            </li>
-            <li class="nav-item">
+             </li>
+             <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#tables-nav-1" data-bs-toggle="collapse" href="#" aria-expanded="false">
                <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
@@ -347,23 +345,24 @@
                      <span>Form Editor</span>
                      </a>
                   </li>
+                  
                </ul>
             </li>
+            
+            <!-- End Components Nav -->
          </ul>
       </aside>
-      <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>Calendar</h1>
+            <h1>Badge</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">Calendar</li>
+                  <li class="breadcrumb-item active">Badge</li>
                </ol>
             </nav>
          </div>
-         <!-- End Page Title -->
          <section class="section">
             <div class="row">
                <div class="card">
@@ -378,30 +377,125 @@
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
-                           <div class="">
-                              <div class="col-lg-12">
-                                 <div class=" row">
-                                    <div class="mb-3 mt-2 col-md-6">
-                                       <label for="exampleFormControlInput1" class="form-label">Form Date</label>
-                                       <div>
-                                          <input class="form-control datepicker calendar" placeholder="YYYY/MM/DD HH:MM"  type="text" >
-                                          
-                                       </div>
-                                    </div>
-                                    <div class="mb-3 mt-2 col-md-6">
-                                       <label for="exampleFormControlInput2" class="form-label"> Field Date</label>
-                                       <div>
-                                          <input class="form-control datepicker calendar" placeholder="YYYY/MM/DD HH:MM"  type="text" >
-                                          
-                                       </div>
-                                    </div>
-                                    
-                                       
+                           <div class="row">
+                                
 
-                                        
+
+
+
+
+
+
+                                
+                                 <div class="col-lg-6">
+
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Default Badges</h5>
+                          
+                                        <span class="badge bg-primary">Primary</span>
+                                        <span class="badge bg-secondary">Secondary</span>
+                                        <span class="badge bg-success">Success</span>
+                                        <span class="badge bg-danger">Danger</span>
+                                        <span class="badge bg-warning text-dark">Warning</span>
+                                        <span class="badge bg-info text-dark">Info</span>
+                                        <span class="badge bg-light text-dark">Light</span>
+                                        <span class="badge bg-dark">Dark</span>
+                                      </div>
                                     </div>
-                                 </div>   
-                              </div>
+                          
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Pill Badges</h5>
+                                        <span class="badge rounded-pill bg-primary">Primary</span>
+                                        <span class="badge rounded-pill bg-secondary">Secondary</span>
+                                        <span class="badge rounded-pill bg-success">Success</span>
+                                        <span class="badge rounded-pill bg-danger">Danger</span>
+                                        <span class="badge rounded-pill bg-warning text-dark">Warning</span>
+                                        <span class="badge rounded-pill bg-info text-dark">Info</span>
+                                        <span class="badge rounded-pill bg-light text-dark">Light</span>
+                                        <span class="badge rounded-pill bg-dark">Dark</span>
+                                      </div>
+                                    </div>
+                          
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Icon Badges</h5>
+                                        <span class="badge bg-primary"> Primary<i class="bi bi-x ms-1"></i></span>                                        <span class="badge bg-secondary"><i class="bi bi-collection me-1"></i> Secondary</span>
+                                        <span class="badge bg-success"><i class="bi bi-check-circle me-1"></i> Success</span>
+                                        <span class="badge bg-danger"><i class="bi bi-exclamation-octagon me-1"></i> Danger</span>
+                                        <span class="badge bg-warning text-dark"><i class="bi bi-exclamation-triangle me-1"></i> Warning</span>
+                                        <span class="badge bg-info text-dark"><i class="bi bi-info-circle me-1"></i> Info</span>
+                                        <span class="badge bg-light text-dark"><i class="bi bi-star me-1"></i> Light</span>
+                                        <span class="badge bg-dark"><i class="bi bi-folder me-1"></i> Dark</span>
+                                      </div>
+                                    </div>
+                          
+                                  </div>
+
+                                 
+                               
+                                  <div class="col-lg-6">
+
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Border Badges</h5>
+                                        <span class="badge border-primary border-1 text-primary">Primary</span>
+                                        <span class="badge border-secondary border-1 text-secondary">Secondary</span>
+                                        <span class="badge border-success border-1 text-success">Success</span>
+                                        <span class="badge border-danger border-1 text-danger">Danger</span>
+                                        <span class="badge border-warning border-1 text-warning">Warning</span>
+                                        <span class="badge border-info border-1 text-info">Info</span>
+                                        <span class="badge border-light border-1 text-black-50">Light</span>
+                                        <span class="badge border-dark border-1 text-dark">Dark</span>
+                                      </div>
+                                    </div>
+                          
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Button Badges</h5>
+                          
+                                        <button type="button" class="btn btn-primary mb-2">
+                                          Primary <span class="badge bg-white text-primary">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-secondary mb-2">
+                                          Secondary <span class="badge bg-white text-secondary">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-success mb-2">
+                                          Success <span class="badge bg-white text-success">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-danger mb-2">
+                                          Danger <span class="badge bg-white text-danger">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-warning mb-2">
+                                          Warning <span class="badge bg-white text-warning">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-info mb-2">
+                                          Info <span class="badge bg-white text-info">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-light mb-2">
+                                          Light <span class="badge bg-secondary text-light">4</span>
+                                        </button>
+                                        <button type="button" class="btn btn-dark mb-2">
+                                          Dark <span class="badge bg-white text-dark">4</span>
+                                        </button>
+                                      </div>
+                                    </div>
+                          
+                          
+                                  </div>
+
+
+
+
+
+
+
+
+
+
+                                
+                                    
                            </div>
                         </div>
                         <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -412,17 +506,12 @@
                                     <pre class=" language-html">
                                        
                                        <code class=" language-html" data-lang="html">  
-          <span class="token tag">
-            <span class="token tag">
-               <span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert alert-primary alert-dismissible fade show<span class="token punctuation">"</span> role <span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                  </span>A simple primary alert—check it out!<span class="token tag">
-                    <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span>
-                       data-bs-dismiss<span class="token punctuation attr-equals"> =</span><span class="token punctuation">"</span><span class="token punctuation">alert</span><span class="token punctuation">"</span> aria-label <span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">close</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-              <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>div</span<span class="token punctuation">&gt;</span></span>
-         
-          
-              
-            </code></pre>
+      <span class="token tag">
+         <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>btn btn-primary me-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Primary
+         <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>button</span<span class="token punctuation">&gt;</span></span>
+
+     
+      </code></pre>
                                  </figure>
                               </div>
                            </div>
@@ -433,7 +522,6 @@
             </div>
          </section>
       </main>
-      <!-- End #main -->
       <footer id="footer" class="footer">
          <div class="copyright">
             &copy; Copyright <strong><span>FNC Fujitsu</span></strong>. All Rights Reserved
@@ -441,39 +529,15 @@
       </footer>
       <!-- End Footer -->
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/chart.js/chart.min.js"></script>
+      <script src="assets/vendor/echarts/echarts.min.js"></script>
       <script src="assets/vendor/quill/quill.min.js"></script>
+      <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+      <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
       <script src="assets/js/main.js"></script>
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-    <script src="https://unpkg.com/flatpickr"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-    <script src="assets/js/soft-design-system.min.js"></script>
-     <script>
-
-    $('.calendar').flatpickr({
-    "locale": 'en',
-    minDate: new Date(),
-    enableTime: true,
-    time_24hr: false,
-    minuteIncrement: 15,
-    onChange: function(selectedDates, dateStr, instance) {
-        var selectedDatesStr = selectedDates.reduce(function(acc, ele) {
-            var str = instance.formatDate(ele, "d/m/Y");
-            acc = (acc == '') ? str : acc + ';' + str;
-            return acc;
-        }, '');
-        instance.set('enable', [function(date) {
-            if (selectedDates.length >= 3) {
-                var currDateStr = instance.formatDate(date, "d/m/Y")
-                var x = selectedDatesStr.indexOf(currDateStr);
-                return x != -1;
-            } else {
-                return true;
-            }
-        }]);
-    }
-});
-       </script>
+      <script src="assets/js/soft-design-system.min.js"></script>
    </body>
 </html>

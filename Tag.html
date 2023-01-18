@@ -3,16 +3,15 @@
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>FNC Design Systems</title>
+      <title>FNC Design Systems-Button</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
-      <!-- Favicons -->
-      <link href="assets/img/favicon.png" rel="icon">
-      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-      <!-- Vendor CSS Files -->
+      <link href="assets/img/favicon.png" rel="icon">
+      <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      <link href="https://fonts.gstatic.com" rel="preconnect">
       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
       <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -134,22 +133,11 @@
                         </a>
                      </li>
                   </ul>
-                  <!-- End Profile Dropdown Items -->
                </li>
-               <!-- End Profile Nav -->
             </ul>
          </nav>
-         <!-- End Icons Navigation -->
       </header>
-      <!-- End Header -->
-      <!-- ======= Sidebar ======= -->
       <aside id="sidebar" class="sidebar">
-         <div class="search-bar">
-            <form class="search-form d-flex align-items-center mb-3" method="POST" action="#">
-               <input type="text" name="query" placeholder="Search for UI" title="search for UI">
-               <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-            </form>
-         </div>
          <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
                <a class="nav-link collapsed" href="index.html">
@@ -159,10 +147,10 @@
             </li>
             <!-- End Dashboard Nav -->
             <li class="nav-item">
-               <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+               <a class="nav-link" data-bs-target="#components-navs" data-bs-toggle="collapse" href="#">
                <i class="bi bi-x-diamond-fill"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+               <ul id="components-navs" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
                   <li>
                      <a href="Flag.html">
                      <span>Flag</span>
@@ -208,14 +196,13 @@
                      <span>Breadcrumb</span>
                      </a>
                   </li>
-                
                   <li>
-                     <a href="Toggle.html" >
+                     <a href="Toggle.html">
                      <span>Toggle</span>
                      </a>
                   </li>
                   <li>
-                     <a href="Tab.html" class="active">
+                     <a href="Tab.html" >
                      <span>Tabs</span>
                      </a>
                   </li>
@@ -270,17 +257,18 @@
                      </a>
                   </li>
                   <li>
-                     <a href="Tag.html">
+                     <a href="Tag.html" class="active">
                      <span>Tag </span>
                      </a>
                   </li>
                </ul>
             </li>
+            <!-- End Dashboard Nav --> 
             <li class="nav-item">
-               <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
+               <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                <i class="bi bi-menu-button-wide"></i><span>Button</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+               <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                   <li>
                      <a href="Primary-button.html">
                      <span>Primary</span>
@@ -327,22 +315,22 @@
             </li>
             <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#" aria-expanded="false">
-                 <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+               <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
                <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                   <li>
-                   <a href="General-Table.html">
-                    <span>General Tables</span>
-                   </a>
-                 </li>
-                 <li>
-                  <a href="Responsive-Table.html">
-                  <span>Responsive Tables</span>
-                  </a>
-               </li>
+                     <a href="General-Table.html">
+                     <span>General Tables</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Responsive-Table.html">
+                     <span>Responsive Tables</span>
+                     </a>
+                  </li>
                </ul>
-             </li>
-             <li class="nav-item">
+            </li>
+            <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#tables-nav2" data-bs-toggle="collapse" href="#" aria-expanded="false">
                <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
@@ -366,7 +354,7 @@
                
                </ul>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
                <a class="nav-link collapsed" data-bs-target="#tables-nav-1" data-bs-toggle="collapse" href="#" aria-expanded="false">
                <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
@@ -376,24 +364,22 @@
                      <span>Form Editor</span>
                      </a>
                   </li>
-                  
                </ul>
             </li>
+            <!-- End Components Nav -->
          </ul>
       </aside>
-      <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>Tabs</h1>
+            <h1>Tag</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">Tabs</li>
+                  <li class="breadcrumb-item active">Tag</li>
                </ol>
             </nav>
          </div>
-         <!-- End Page Title -->
          <section class="section">
             <div class="row">
                <div class="card">
@@ -410,56 +396,20 @@
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="row">
                               <div class="col-lg-12">
-                                 <div class="card">
-                                    <div class="card-body">
-                                       <h5 class="card-title">Horizontal Tabs</h5>
-                                       <!-- Bordered Tabs -->
-                                       <ul class="nav nav-tabs nav-tabs-bordered text-center" id="borderedTab-1" role="tablist">
-                                          <li class="nav-item" role="presentation">
-                                             <button class="nav-link active" id="profile-tab-11" data-bs-toggle="tab" data-bs-target="#bordered-profile-11" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1"> <i class="bi bi-person-fill custom-icon"
-                                                ></i> Vaadin tab</button>
-                                          </li>
-                                          <li class="nav-item" role="presentation">
-                                             <button class="nav-link" id="profile-tab-12" data-bs-toggle="tab" data-bs-target="#bordered-profile-12" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1"> <i class="bi bi-person-fill custom-icon"
-                                                ></i> Vaadin tab</button>
-                                          </li>
-                                          <li class="nav-item" role="presentation">
-                                             <button class="nav-link" id="profile-tab-13" data-bs-toggle="tab" data-bs-target="#bordered-profile-13" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1"> <i class="bi bi-person-fill custom-icon"
-                                                ></i> Vaadin tab</button>
-                                          </li>
-                                          <li class="nav-item" role="presentation">
-                                             <button class="nav-link pt-32" id="profile-tab-14" data-bs-toggle="tab" data-bs-target="#bordered-profile-14" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1"> </i> Vaadin tab</button>
-                                          </li>
-                                          <li class="nav-item" role="presentation">
-                                             <button class="nav-link" id="profile-tab-15" data-bs-toggle="tab" data-bs-target="#bordered-profile-15" type="button" role="tab" aria-controls="profile" aria-selected="false" tabindex="-1"> <i class="bi bi-person-fill custom-icon"
-                                                ></i> Vaadin tab</button>
-                                          </li>
-                                       </ul>
-                                       <!-- End Bordered Tabs -->
+                                 <div>
+                                    <h5 class="card-title">Tags With Cross</h5>
+                                    <div class="basic-chip"> <span class="primary">NE ID </span> Equals <span class="primary">S10, L90 </span>
+                                       <i class="bi bi-x tag-icon"></i> 
+                                    </div>
+                                    <div class="basic-chip"> <span class="primary">NE ID </span> Equals <span class="primary">S10, L90 </span>
+                                       <i class="bi bi-x tag-icon"></i> 
+                                    </div>
+                                    <div class="basic-chip"> Tag Name </span>
+                                       <i class="bi bi-x tag-icon"></i> 
+                                    </div>
+                                    <div class="basic-chip"> Tag Name </span>
                                     </div>
                                  </div>
-
-                                 <div class="card">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Vertical Tabs</h5>
-                        
-                                      <!-- Vertical Pills Tabs -->
-                                      <div class="d-flex align-items-start">
-                                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Vaadin tab</button>
-                                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Vaadin tab</button>
-                                          <button class="nav-link active" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-person-fill px-2"></i> Vaadin tab</button>
-                                          <button class="nav-link" id="v-pills-messages-tabs" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="bi bi-person-fill px-2"></i> Vaadin tab</button>
-                    
-                                        </div>
-                                    
-                                      </div>
-                                      <!-- End Vertical Pills Tabs -->
-                        
-                                    </div>
-                                  </div>
-
-                                  
                               </div>
                            </div>
                         </div>
@@ -471,17 +421,12 @@
                                     <pre class=" language-html">
                                        
                                        <code class=" language-html" data-lang="html">  
-          <span class="token tag">
-            <span class="token tag">
-               <span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert alert-primary alert-dismissible fade show<span class="token punctuation">"</span> role <span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                  </span>A simple primary alert—check it out!<span class="token tag">
-                    <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span>
-                       data-bs-dismiss<span class="token punctuation attr-equals"> =</span><span class="token punctuation">"</span><span class="token punctuation">alert</span><span class="token punctuation">"</span> aria-label <span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">close</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-              <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>div</span<span class="token punctuation">&gt;</span></span>
-         
-          
-              
-            </code></pre>
+      <span class="token tag">
+         <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>btn btn-primary me-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Primary
+         <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>button</span<span class="token punctuation">&gt;</span></span>
+
+     
+      </code></pre>
                                  </figure>
                               </div>
                            </div>
@@ -489,22 +434,14 @@
                      </div>
                   </div>
                </div>
-
-
-             
-
-
             </div>
          </section>
       </main>
-      <!-- End #main -->
-      <!-- ======= Footer ======= -->
       <footer id="footer" class="footer">
          <div class="copyright">
             &copy; Copyright <strong><span>FNC Fujitsu</span></strong>. All Rights Reserved
          </div>
       </footer>
-      <!-- End Footer -->
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

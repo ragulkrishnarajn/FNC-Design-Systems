@@ -3,15 +3,16 @@
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>FNC Design Systems-Button</title>
+      <title>FNC Design Systems</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- Favicons -->
       <link href="assets/img/favicon.png" rel="icon">
       <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-      <link href="https://fonts.gstatic.com" rel="preconnect">
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- Vendor CSS Files -->
       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
       <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -133,11 +134,21 @@
                         </a>
                      </li>
                   </ul>
+                  <!-- End Profile Dropdown Items -->
                </li>
+               <!-- End Profile Nav -->
             </ul>
          </nav>
       </header>
+      <!-- End Header -->
+      <!-- ======= Sidebar ======= -->
       <aside id="sidebar" class="sidebar">
+         <div class="search-bar">
+            <form class="search-form d-flex align-items-center mb-3" method="POST" action="#">
+               <input type="text" name="query" placeholder="Search for UI" title="search for UI">
+               <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+         </div>
          <ul class="sidebar-nav" id="sidebar-nav">
             <li class="nav-item">
                <a class="nav-link collapsed" href="index.html">
@@ -147,10 +158,10 @@
             </li>
             <!-- End Dashboard Nav -->
             <li class="nav-item">
-               <a class="nav-link" data-bs-target="#components-navs" data-bs-toggle="collapse" href="#">
+               <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
                <i class="bi bi-x-diamond-fill"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-navs" class="nav-content collapse show " data-bs-parent="#sidebar-nav">
+               <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
                   <li>
                      <a href="Flag.html">
                      <span>Flag</span>
@@ -257,17 +268,17 @@
                      </a>
                   </li>
                   <li>
-                     <a href="Tag.html" class="active">
+                     <a href="Tag.html">
                      <span>Tag </span>
                      </a>
                   </li>
                   <li>
-                     <a href="Empty-State.html" >
+                     <a href="Empty-State.html">
                      <span>Empty State </span>
                      </a>
                   </li>
                   <li>
-                     <a href="Navigation.html">
+                     <a href="Navigation.html" class="active">
                      <span>Navigation </span>
                      </a>
                   </li>
@@ -276,14 +287,14 @@
                      <span>Slider Range </span>
                      </a>
                   </li>
+                 
                </ul>
             </li>
-            <!-- End Dashboard Nav --> 
             <li class="nav-item">
-               <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+               <a class="nav-link collapsed" data-bs-target="#components-nav2" data-bs-toggle="collapse" href="#">
                <i class="bi bi-menu-button-wide"></i><span>Button</span><i class="bi bi-chevron-down ms-auto"></i>
                </a>
-               <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+               <ul id="components-nav2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                   <li>
                      <a href="Primary-button.html">
                      <span>Primary</span>
@@ -362,17 +373,15 @@
                      </a>
                   </li>
                   <li>
-                   <a href="Apexcharts.html">
-                   <span>Apex Charts</span>
-                   </a>
-                </li>
-                <li>
-                   <a href="Echarts.html">
-                   <span>Echarts</span>
-                   </a>
-                </li>
-
-               
+                     <a href="Apexcharts.html">
+                     <span>Apex Charts</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="Echarts.html">
+                     <span>Echarts</span>
+                     </a>
+                  </li>
                </ul>
             </li>
             <li class="nav-item">
@@ -387,20 +396,21 @@
                   </li>
                </ul>
             </li>
-            <!-- End Components Nav -->
          </ul>
       </aside>
+      <!-- End Sidebar-->
       <main id="main" class="main">
          <div class="pagetitle">
-            <h1>Tag</h1>
+            <h1>Left Navigation</h1>
             <nav>
                <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item">Components</li>
-                  <li class="breadcrumb-item active">Tag</li>
+                  <li class="breadcrumb-item active">Left Navigation</li>
                </ol>
             </nav>
          </div>
+         <!-- End Page Title -->
          <section class="section">
             <div class="row">
                <div class="card">
@@ -416,21 +426,151 @@
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="row">
-                              <div class="col-lg-12">
-                                 <div>
-                                    <h5 class="card-title">Tags With Cross</h5>
-                                    <div class="basic-chip"> <span class="primary">NE ID </span> Equals <span class="primary">S10, L90 </span>
-                                       <i class="bi bi-x tag-icon"></i> 
-                                    </div>
-                                    <div class="basic-chip"> <span class="primary">NE ID </span> Equals <span class="primary">S10, L90 </span>
-                                       <i class="bi bi-x tag-icon"></i> 
-                                    </div>
-                                    <div class="basic-chip"> Tag Name </span>
-                                       <i class="bi bi-x tag-icon"></i> 
-                                    </div>
-                                    <div class="basic-chip"> Tag Name </span>
-                                    </div>
-                                 </div>
+                              <div class="sidebar position-static">
+                                 <ul class="sidebar-nav" id="sidebar-nav">
+                                    <li class="nav-item">
+                                       <a class="nav-link collapsed" href="">
+                                       <i class="bi bi-grid"></i>
+                                       <span>Home screen </span>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link collapsed " href="">
+                                       <i class="bi bi-box-arrow-in-right"></i>
+                                       <span>Home screen</span>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link collapsed " href="">
+                                       <i class="bi  bi-file-font"></i>
+                                       <span>Home screen</span>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link collapsed" data-bs-target="#left-nav1" data-bs-toggle="collapse" href="#" aria-expanded="false">
+                                       <i class="bi bi-layout-text-window-reverse"></i><span>Home screen</span><i class="bi bi-chevron-down ms-auto"></i>
+                                       </a>
+                                       <ul id="left-nav1" class="nav-content collapse" data-bs-parent="#left-nav1">
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - A</span>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - B</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link collapsed" data-bs-target="#left-nav2" data-bs-toggle="collapse" href="#" aria-expanded="false">
+                                       <i class="bi bi-bar-chart"></i><span>Home screen</span><i class="bi bi-chevron-down ms-auto"></i>
+                                       </a>
+                                       <ul id="left-nav2" class="nav-content collapse" data-bs-parent="#left-nav2">
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - A </span>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - B</span>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - C</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a class="nav-link collapsed" data-bs-target="#left-nav3" data-bs-toggle="collapse" href="#" aria-expanded="false">
+                                       <i class="bi bi-journal-text"></i><span>Home screen</span><i class="bi bi-chevron-down ms-auto"></i>
+                                       </a>
+                                       <ul id="left-nav3" class="nav-content collapse" data-bs-parent="#left-nav3">
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - A   </span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="sidebar position-static ms-5">
+                                 <ul class="sidebar-nav" id="sidebar-nav">
+                                    <li class="nav-item shadow ">
+                                       <a class="nav-link collapsed" href="">
+                                       <i class="bi bi-grid"></i>
+                                       <span>Home screen </span>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item shadow ">
+                                       <a class="nav-link collapsed " href="">
+                                       <i class="bi bi-box-arrow-in-right"></i>
+                                       <span>Home screen</span>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item shadow ">
+                                       <a class="nav-link collapsed " href="">
+                                       <i class="bi  bi-file-font"></i>
+                                       <span>Home screen</span>
+                                       </a>
+                                    </li>
+                                    <li class="nav-item shadow ">
+                                       <a class="nav-link collapsed" data-bs-target="#left-nav4" data-bs-toggle="collapse" href="#" aria-expanded="false">
+                                       <i class="bi bi-layout-text-window-reverse"></i><span>Home screen</span><i class="bi bi-chevron-down ms-auto"></i>
+                                       </a>
+                                       <ul id="left-nav4" class="nav-content collapse" data-bs-parent="#left-nav4">
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - A</span>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - B</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="nav-item shadow ">
+                                       <a class="nav-link collapsed" data-bs-target="#left-nav5" data-bs-toggle="collapse" href="#" aria-expanded="false">
+                                       <i class="bi bi-bar-chart"></i><span>Home screen</span><i class="bi bi-chevron-down ms-auto"></i>
+                                       </a>
+                                       <ul id="left-nav5" class="nav-content collapse" data-bs-parent="#left-nav5">
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - A </span>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - B</span>
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - C</span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li class="nav-item shadow ">
+                                       <a class="nav-link collapsed" data-bs-target="#left-nav6" data-bs-toggle="collapse" href="#" aria-expanded="false">
+                                       <i class="bi bi-journal-text"></i><span>Home screen</span><i class="bi bi-chevron-down ms-auto"></i>
+                                       </a>
+                                       <ul id="left-nav6" class="nav-content collapse" data-bs-parent="#left-nav6">
+                                          <li>
+                                             <a href="">
+                                             <span>Home screen - A   </span>
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                 </ul>
                               </div>
                            </div>
                         </div>
@@ -442,12 +582,17 @@
                                     <pre class=" language-html">
                                        
                                        <code class=" language-html" data-lang="html">  
-      <span class="token tag">
-         <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span> <span class="token punctuation">"</span>btn btn-primary me-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span>Primary
-         <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>button</span<span class="token punctuation">&gt;</span></span>
-
-     
-      </code></pre>
+          <span class="token tag">
+            <span class="token tag">
+               <span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert alert-primary alert-dismissible fade show<span class="token punctuation">"</span> role <span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                  </span>A simple primary alert—check it out!<span class="token tag">
+                    <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span>
+                       data-bs-dismiss<span class="token punctuation attr-equals"> =</span><span class="token punctuation">"</span><span class="token punctuation">alert</span><span class="token punctuation">"</span> aria-label <span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">close</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+              <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>div</span<span class="token punctuation">&gt;</span></span>
+         
+          
+              
+            </code></pre>
                                  </figure>
                               </div>
                            </div>
@@ -458,11 +603,14 @@
             </div>
          </section>
       </main>
+      <!-- End #main -->
+      <!-- ======= Footer ======= -->
       <footer id="footer" class="footer">
          <div class="copyright">
             &copy; Copyright <strong><span>FNC Fujitsu</span></strong>. All Rights Reserved
          </div>
       </footer>
+      <!-- End Footer -->
       <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
       <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
       <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

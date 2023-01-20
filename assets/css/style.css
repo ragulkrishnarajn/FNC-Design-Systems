@@ -3377,7 +3377,7 @@ img.table-header-icons {
 .splitter-horizontal {
   flex: 0 0 auto;
   height: 18px;
-  background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/hsizegrip.png) center center no-repeat #535353;
+  background: url(https://raw.githubusercontent.com/RickStrahl/jquery-resizable/master/assets/vsizegrip.png) center center no-repeat #535353;
   cursor: row-resize;
 }
 

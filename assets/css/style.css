@@ -1773,9 +1773,9 @@ label {
   font-family: sans-serif;
 }
 
-.form-check {
+/* .form-check {
   margin-bottom: 1.125rem;
-}
+} */
 
 .card-body.min-height {
   min-height: 206px;
@@ -3386,4 +3386,63 @@ img.table-header-icons {
   padding: 10px;
   min-height: 200px;
   background: #eee;
+}
+
+
+/* @metion tag */
+.chip-primary {
+  background: #167DF5;
+  color: white;
+  border: none;
+}
+
+/* select css */
+.form-select-sm {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #9D9D9B;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1.5px solid #DFE1E6;
+  appearance: none;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* dropdown css */
+
+.dropdown-item.selected {
+    background: #CFCFCF;
+}
+
+.dropdown-menu .h6, h6 {
+  font-size: 14px;
+  padding: 15px 15px 5px 15px;
+  color: #7A7A7A;
+}
+
+/* List menu css */
+
+.list-group-item+.list-group-item {
+  border-bottom: none;
+}
+
+.list-group-item {
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+}
+.list-group-item.active {
+  background: #167DF5;
+}
+.list-group-item:hover {
+  background: #f6f9ff;
+  cursor: pointer;
+  color: #212529;
 }

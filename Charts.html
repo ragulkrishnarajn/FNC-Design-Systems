@@ -313,6 +313,11 @@
       <span>List Menu </span>
       </a>
    </li>
+   <li>
+    <a href="More-List.html">
+    <span>More List </span>
+    </a>
+ </li>
                </ul>
             </li>
             <li class="nav-item">
@@ -889,18 +894,419 @@
                                  <figure class="highlight">
                                     <pre class=" language-html">
                                        
-                                       <code class=" language-html" data-lang="html">  
-          <span class="token tag">
-            <span class="token tag">
-               <span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert alert-primary alert-dismissible fade show<span class="token punctuation">"</span> role <span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                  </span>A simple primary alert—check it out!<span class="token tag">
-                    <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span>
-                       data-bs-dismiss<span class="token punctuation attr-equals"> =</span><span class="token punctuation">"</span><span class="token punctuation">alert</span><span class="token punctuation">"</span> aria-label <span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">close</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-              <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>div</span<span class="token punctuation">&gt;</span></span>
-         
-          
+ <code class=" language-html" data-lang="html">  
+  <pre>
+    <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">  &lt;div <span style="color:rgb(68, 68, 68); font-weight:700;">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;row&quot;</span>&gt;
+  <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Line Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Line Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;lineChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#lineChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;line&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;January&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;February&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;March&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;April&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;June&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;July&#x27;</span>],
+            <span class="hljs-attr">datasets</span>: [{
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Line Chart&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">65</span>, <span class="hljs-number">59</span>, <span class="hljs-number">80</span>, <span class="hljs-number">81</span>, <span class="hljs-number">56</span>, <span class="hljs-number">55</span>, <span class="hljs-number">40</span>],
+              <span class="hljs-attr">fill</span>: <span class="hljs-literal">false</span>,
+              <span class="hljs-attr">borderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(75, 192, 192)&#x27;</span>,
+              <span class="hljs-attr">tension</span>: <span class="hljs-number">0.1</span>
+            }]
+          },
+          <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">scales</span>: {
+              <span class="hljs-attr">y</span>: {
+                <span class="hljs-attr">beginAtZero</span>: <span class="hljs-literal">true</span>
+              }
+            }
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Line CHart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Bar CHart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Bar Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;barChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#barChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;bar&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;January&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;February&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;March&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;April&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;June&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;July&#x27;</span>],
+            <span class="hljs-attr">datasets</span>: [{
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Bar Chart&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">65</span>, <span class="hljs-number">59</span>, <span class="hljs-number">80</span>, <span class="hljs-number">81</span>, <span class="hljs-number">56</span>, <span class="hljs-number">55</span>, <span class="hljs-number">40</span>],
+              <span class="hljs-attr">backgroundColor</span>: [
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(255, 99, 132, 0.2)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(255, 159, 64, 0.2)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(255, 205, 86, 0.2)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(75, 192, 192, 0.2)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(54, 162, 235, 0.2)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(153, 102, 255, 0.2)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(201, 203, 207, 0.2)&#x27;</span>
+              ],
+              <span class="hljs-attr">borderColor</span>: [
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 159, 64)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 205, 86)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(75, 192, 192)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(153, 102, 255)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(201, 203, 207)&#x27;</span>
+              ],
+              <span class="hljs-attr">borderWidth</span>: <span class="hljs-number">1</span>
+            }]
+          },
+          <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">scales</span>: {
+              <span class="hljs-attr">y</span>: {
+                <span class="hljs-attr">beginAtZero</span>: <span class="hljs-literal">true</span>
+              }
+            }
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Bar CHart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Pie Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Pie Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;pieChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#pieChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;pie&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Red&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Blue&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Yellow&#x27;</span>
+            ],
+            <span class="hljs-attr">datasets</span>: [{
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;My First Dataset&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>],
+              <span class="hljs-attr">backgroundColor</span>: [
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 205, 86)&#x27;</span>
+              ],
+              <span class="hljs-attr">hoverOffset</span>: <span class="hljs-number">4</span>
+            }]
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Pie CHart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Doughnut Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Doughnut Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;doughnutChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#doughnutChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;doughnut&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Red&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Blue&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Yellow&#x27;</span>
+            ],
+            <span class="hljs-attr">datasets</span>: [{
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;My First Dataset&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">300</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>],
+              <span class="hljs-attr">backgroundColor</span>: [
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 205, 86)&#x27;</span>
+              ],
+              <span class="hljs-attr">hoverOffset</span>: <span class="hljs-number">4</span>
+            }]
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Doughnut CHart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Radar Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Radar Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;radarChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#radarChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;radar&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Eating&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Drinking&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Sleeping&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Designing&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Coding&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Cycling&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Running&#x27;</span>
+            ],
+            <span class="hljs-attr">datasets</span>: [{
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;First Dataset&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">65</span>, <span class="hljs-number">59</span>, <span class="hljs-number">90</span>, <span class="hljs-number">81</span>, <span class="hljs-number">56</span>, <span class="hljs-number">55</span>, <span class="hljs-number">40</span>],
+              <span class="hljs-attr">fill</span>: <span class="hljs-literal">true</span>,
+              <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(255, 99, 132, 0.2)&#x27;</span>,
+              <span class="hljs-attr">borderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+              <span class="hljs-attr">pointBackgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+              <span class="hljs-attr">pointBorderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#fff&#x27;</span>,
+              <span class="hljs-attr">pointHoverBackgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#fff&#x27;</span>,
+              <span class="hljs-attr">pointHoverBorderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>
+            }, {
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Second Dataset&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">28</span>, <span class="hljs-number">48</span>, <span class="hljs-number">40</span>, <span class="hljs-number">19</span>, <span class="hljs-number">96</span>, <span class="hljs-number">27</span>, <span class="hljs-number">100</span>],
+              <span class="hljs-attr">fill</span>: <span class="hljs-literal">true</span>,
+              <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(54, 162, 235, 0.2)&#x27;</span>,
+              <span class="hljs-attr">borderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>,
+              <span class="hljs-attr">pointBackgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>,
+              <span class="hljs-attr">pointBorderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#fff&#x27;</span>,
+              <span class="hljs-attr">pointHoverBackgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#fff&#x27;</span>,
+              <span class="hljs-attr">pointHoverBorderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>
+            }]
+          },
+          <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">elements</span>: {
+              <span class="hljs-attr">line</span>: {
+                <span class="hljs-attr">borderWidth</span>: <span class="hljs-number">3</span>
+              }
+            }
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Radar CHart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Polar Area Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Polar Area Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;polarAreaChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#polarAreaChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;polarArea&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Red&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Green&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Yellow&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Grey&#x27;</span>,
+              <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Blue&#x27;</span>
+            ],
+            <span class="hljs-attr">datasets</span>: [{
+              <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;My First Dataset&#x27;</span>,
+              <span class="hljs-attr">data</span>: [<span class="hljs-number">11</span>, <span class="hljs-number">16</span>, <span class="hljs-number">7</span>, <span class="hljs-number">3</span>, <span class="hljs-number">14</span>],
+              <span class="hljs-attr">backgroundColor</span>: [
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(75, 192, 192)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 205, 86)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(201, 203, 207)&#x27;</span>,
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(54, 162, 235)&#x27;</span>
+              ]
+            }]
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Polar Area Chart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Stacked Bar Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Stacked Bar Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;stakedBarChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#stakedBarChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;bar&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;January&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;February&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;March&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;April&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;June&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;July&#x27;</span>],
+            <span class="hljs-attr">datasets</span>: [{
+                <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Dataset 1&#x27;</span>,
+                <span class="hljs-attr">data</span>: [-<span class="hljs-number">75</span>, -<span class="hljs-number">15</span>, <span class="hljs-number">18</span>, <span class="hljs-number">48</span>, <span class="hljs-number">74</span>],
+                <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+              },
+              {
+                <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Dataset 2&#x27;</span>,
+                <span class="hljs-attr">data</span>: [-<span class="hljs-number">11</span>, -<span class="hljs-number">1</span>, <span class="hljs-number">12</span>, <span class="hljs-number">62</span>, <span class="hljs-number">95</span>],
+                <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(75, 192, 192)&#x27;</span>,
+              },
+              {
+                <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Dataset 3&#x27;</span>,
+                <span class="hljs-attr">data</span>: [-<span class="hljs-number">44</span>, -<span class="hljs-number">5</span>, <span class="hljs-number">22</span>, <span class="hljs-number">35</span>, <span class="hljs-number">62</span>],
+                <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 205, 86)&#x27;</span>,
+              },
+            ]
+          },
+          <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">plugins</span>: {
+              <span class="hljs-attr">title</span>: {
+                <span class="hljs-attr">display</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-attr">text</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Chart.js Bar Chart - Stacked&#x27;</span>
+              },
+            },
+            <span class="hljs-attr">responsive</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">scales</span>: {
+              <span class="hljs-attr">x</span>: {
+                <span class="hljs-attr">stacked</span>: <span class="hljs-literal">true</span>,
+              },
+              <span class="hljs-attr">y</span>: {
+                <span class="hljs-attr">stacked</span>: <span class="hljs-literal">true</span>
+              }
+            }
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Stacked Bar Chart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+<span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Bubble Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Bubble Chart --&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;bubbleChart&quot;</span> <span class="hljs-attr">style</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;max-height: 400px;&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+      <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Chart</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#bubbleChart&#x27;</span>), {
+          <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;bubble&#x27;</span>,
+          <span class="hljs-attr">data</span>: {
+            <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;January&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;February&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;March&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;April&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;June&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;July&#x27;</span>],
+            <span class="hljs-attr">datasets</span>: [{
+                <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Dataset 1&#x27;</span>,
+                <span class="hljs-attr">data</span>: [{
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">20</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">30</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">15</span>
+                  },
+                  {
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">40</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">10</span>
+                  },
+                  {
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">15</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">37</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">12</span>
+                  },
+                  {
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">32</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">42</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">33</span>
+                  }
+                ],
+                <span class="hljs-attr">borderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(255, 99, 132)&#x27;</span>,
+                <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(255, 99, 132, 0.5)&#x27;</span>
+              },
+              {
+                <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Dataset 2&#x27;</span>,
+                <span class="hljs-attr">data</span>: [{
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">40</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">25</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">22</span>
+                  },
+                  {
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">24</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">47</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">11</span>
+                  },
+                  {
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">65</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">11</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">14</span>
+                  },
+                  {
+                    <span class="hljs-attr">x</span>: <span class="hljs-number">11</span>,
+                    <span class="hljs-attr">y</span>: <span class="hljs-number">55</span>,
+                    <span class="hljs-attr">r</span>: <span class="hljs-number">8</span>
+                  }
+                ],
+                <span class="hljs-attr">borderColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgb(75, 192, 192)&#x27;</span>,
+                <span class="hljs-attr">backgroundColor</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rgba(75, 192, 192, 0.5)&#x27;</span>
+              }
+            ]
+          },
+          <span class="hljs-attr">options</span>: {
+            <span class="hljs-attr">responsive</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-attr">plugins</span>: {
+              <span class="hljs-attr">legend</span>: {
+                <span class="hljs-attr">position</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;top&#x27;</span>,
+              },
+              <span class="hljs-attr">title</span>: {
+                <span class="hljs-attr">display</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-attr">text</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Chart.js Bubble Chart&#x27;</span>
+              }
+            }
+          }
+        });
+      });
+    </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Bubble Chart --&gt;</span>
+
+  <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+&lt;/div&gt;</code></pre>                       
               
-            </code></pre>
+</code></pre>
                                  </figure>
                               </div>
                            </div>
@@ -931,6 +1337,8 @@
     
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/soft-design-system.min.js"></script>
+
       
      
    </body>

@@ -313,6 +313,11 @@
       <span>List Menu </span>
       </a>
    </li>
+   <li>
+    <a href="More-List.html">
+    <span>More List </span>
+    </a>
+ </li>
                </ul>
             </li>
             <li class="nav-item">
@@ -1279,19 +1284,814 @@
                                  <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
                                  <figure class="highlight">
                                     <pre class=" language-html">
-                                       
-                                       <code class=" language-html" data-lang="html">  
-          <span class="token tag">
-            <span class="token tag">
-               <span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert alert-primary alert-dismissible fade show<span class="token punctuation">"</span> role <span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-                  </span>A simple primary alert—check it out!<span class="token tag">
-                    <span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span> <span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span> class<span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span>
-                       data-bs-dismiss<span class="token punctuation attr-equals"> =</span><span class="token punctuation">"</span><span class="token punctuation">alert</span><span class="token punctuation">"</span> aria-label <span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">close</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-              <span class="token tag"><span class="token tag"> <span class="token punctuation">&lt;/</span>div</span<span class="token punctuation">&gt;</span></span>
-         
-          
+<code class=" language-html" data-lang="html">  
+  <pre>
+    <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">    &lt;div <span style="color:rgb(68, 68, 68); font-weight:700;">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;row&quot;</span>&gt;
+      <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Line Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Line Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;lineChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#lineChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [{
+                  <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;Desktops&quot;</span>,
+                  <span class="hljs-attr">data</span>: [<span class="hljs-number">10</span>, <span class="hljs-number">41</span>, <span class="hljs-number">35</span>, <span class="hljs-number">51</span>, <span class="hljs-number">49</span>, <span class="hljs-number">62</span>, <span class="hljs-number">69</span>, <span class="hljs-number">91</span>, <span class="hljs-number">148</span>]
+                }],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;line&#x27;</span>,
+                  <span class="hljs-attr">zoom</span>: {
+                    <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                  }
+                },
+                <span class="hljs-attr">dataLabels</span>: {
+                  <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                },
+                <span class="hljs-attr">stroke</span>: {
+                  <span class="hljs-attr">curve</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;straight&#x27;</span>
+                },
+                <span class="hljs-attr">grid</span>: {
+                  <span class="hljs-attr">row</span>: {
+                    <span class="hljs-attr">colors</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#f3f3f3&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;transparent&#x27;</span>], <span style="color:rgb(136, 136, 136); font-weight:400;">// takes an array which will be repeated on columns</span>
+                    <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.5</span>
+                  },
+                },
+                <span class="hljs-attr">xaxis</span>: {
+                  <span class="hljs-attr">categories</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Jan&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Feb&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Mar&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Apr&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Jun&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Jul&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Aug&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Sep&#x27;</span>],
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Line Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Area Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Area Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;areaChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">const</span> series = {
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;monthDataSeries1&quot;</span>: {
+                  <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;prices&quot;</span>: [
+                    <span class="hljs-number">8107.85</span>,
+                    <span class="hljs-number">8128.0</span>,
+                    <span class="hljs-number">8122.9</span>,
+                    <span class="hljs-number">8165.5</span>,
+                    <span class="hljs-number">8340.7</span>,
+                    <span class="hljs-number">8423.7</span>,
+                    <span class="hljs-number">8423.5</span>,
+                    <span class="hljs-number">8514.3</span>,
+                    <span class="hljs-number">8481.85</span>,
+                    <span class="hljs-number">8487.7</span>,
+                    <span class="hljs-number">8506.9</span>,
+                    <span class="hljs-number">8626.2</span>,
+                    <span class="hljs-number">8668.95</span>,
+                    <span class="hljs-number">8602.3</span>,
+                    <span class="hljs-number">8607.55</span>,
+                    <span class="hljs-number">8512.9</span>,
+                    <span class="hljs-number">8496.25</span>,
+                    <span class="hljs-number">8600.65</span>,
+                    <span class="hljs-number">8881.1</span>,
+                    <span class="hljs-number">9340.85</span>
+                  ],
+                  <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;dates&quot;</span>: [
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;15 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;16 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;17 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;20 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;22 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;23 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;24 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;29 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;30 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;01 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;04 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;05 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;08 Dec 2017&quot;</span>
+                  ]
+                },
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;monthDataSeries2&quot;</span>: {
+                  <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;prices&quot;</span>: [
+                    <span class="hljs-number">8423.7</span>,
+                    <span class="hljs-number">8423.5</span>,
+                    <span class="hljs-number">8514.3</span>,
+                    <span class="hljs-number">8481.85</span>,
+                    <span class="hljs-number">8487.7</span>,
+                    <span class="hljs-number">8506.9</span>,
+                    <span class="hljs-number">8626.2</span>,
+                    <span class="hljs-number">8668.95</span>,
+                    <span class="hljs-number">8602.3</span>,
+                    <span class="hljs-number">8607.55</span>,
+                    <span class="hljs-number">8512.9</span>,
+                    <span class="hljs-number">8496.25</span>,
+                    <span class="hljs-number">8600.65</span>,
+                    <span class="hljs-number">8881.1</span>,
+                    <span class="hljs-number">9040.85</span>,
+                    <span class="hljs-number">8340.7</span>,
+                    <span class="hljs-number">8165.5</span>,
+                    <span class="hljs-number">8122.9</span>,
+                    <span class="hljs-number">8107.85</span>,
+                    <span class="hljs-number">8128.0</span>
+                  ],
+                  <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;dates&quot;</span>: [
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;15 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;16 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;17 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;20 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;22 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;23 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;24 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;29 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;30 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;01 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;04 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;05 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Dec 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;08 Dec 2017&quot;</span>
+                  ]
+                },
+                <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;monthDataSeries3&quot;</span>: {
+                  <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;prices&quot;</span>: [
+                    <span class="hljs-number">7114.25</span>,
+                    <span class="hljs-number">7126.6</span>,
+                    <span class="hljs-number">7116.95</span>,
+                    <span class="hljs-number">7203.7</span>,
+                    <span class="hljs-number">7233.75</span>,
+                    <span class="hljs-number">7451.0</span>,
+                    <span class="hljs-number">7381.15</span>,
+                    <span class="hljs-number">7348.95</span>,
+                    <span class="hljs-number">7347.75</span>,
+                    <span class="hljs-number">7311.25</span>,
+                    <span class="hljs-number">7266.4</span>,
+                    <span class="hljs-number">7253.25</span>,
+                    <span class="hljs-number">7215.45</span>,
+                    <span class="hljs-number">7266.35</span>,
+                    <span class="hljs-number">7315.25</span>,
+                    <span class="hljs-number">7237.2</span>,
+                    <span class="hljs-number">7191.4</span>,
+                    <span class="hljs-number">7238.95</span>,
+                    <span class="hljs-number">7222.6</span>,
+                    <span class="hljs-number">7217.9</span>,
+                    <span class="hljs-number">7359.3</span>,
+                    <span class="hljs-number">7371.55</span>,
+                    <span class="hljs-number">7371.15</span>,
+                    <span class="hljs-number">7469.2</span>,
+                    <span class="hljs-number">7429.25</span>,
+                    <span class="hljs-number">7434.65</span>,
+                    <span class="hljs-number">7451.1</span>,
+                    <span class="hljs-number">7475.25</span>,
+                    <span class="hljs-number">7566.25</span>,
+                    <span class="hljs-number">7556.8</span>,
+                    <span class="hljs-number">7525.55</span>,
+                    <span class="hljs-number">7555.45</span>,
+                    <span class="hljs-number">7560.9</span>,
+                    <span class="hljs-number">7490.7</span>,
+                    <span class="hljs-number">7527.6</span>,
+                    <span class="hljs-number">7551.9</span>,
+                    <span class="hljs-number">7514.85</span>,
+                    <span class="hljs-number">7577.95</span>,
+                    <span class="hljs-number">7592.3</span>,
+                    <span class="hljs-number">7621.95</span>,
+                    <span class="hljs-number">7707.95</span>,
+                    <span class="hljs-number">7859.1</span>,
+                    <span class="hljs-number">7815.7</span>,
+                    <span class="hljs-number">7739.0</span>,
+                    <span class="hljs-number">7778.7</span>,
+                    <span class="hljs-number">7839.45</span>,
+                    <span class="hljs-number">7756.45</span>,
+                    <span class="hljs-number">7669.2</span>,
+                    <span class="hljs-number">7580.45</span>,
+                    <span class="hljs-number">7452.85</span>,
+                    <span class="hljs-number">7617.25</span>,
+                    <span class="hljs-number">7701.6</span>,
+                    <span class="hljs-number">7606.8</span>,
+                    <span class="hljs-number">7620.05</span>,
+                    <span class="hljs-number">7513.85</span>,
+                    <span class="hljs-number">7498.45</span>,
+                    <span class="hljs-number">7575.45</span>,
+                    <span class="hljs-number">7601.95</span>,
+                    <span class="hljs-number">7589.1</span>,
+                    <span class="hljs-number">7525.85</span>,
+                    <span class="hljs-number">7569.5</span>,
+                    <span class="hljs-number">7702.5</span>,
+                    <span class="hljs-number">7812.7</span>,
+                    <span class="hljs-number">7803.75</span>,
+                    <span class="hljs-number">7816.3</span>,
+                    <span class="hljs-number">7851.15</span>,
+                    <span class="hljs-number">7912.2</span>,
+                    <span class="hljs-number">7972.8</span>,
+                    <span class="hljs-number">8145.0</span>,
+                    <span class="hljs-number">8161.1</span>,
+                    <span class="hljs-number">8121.05</span>,
+                    <span class="hljs-number">8071.25</span>,
+                    <span class="hljs-number">8088.2</span>,
+                    <span class="hljs-number">8154.45</span>,
+                    <span class="hljs-number">8148.3</span>,
+                    <span class="hljs-number">8122.05</span>,
+                    <span class="hljs-number">8132.65</span>,
+                    <span class="hljs-number">8074.55</span>,
+                    <span class="hljs-number">7952.8</span>,
+                    <span class="hljs-number">7885.55</span>,
+                    <span class="hljs-number">7733.9</span>,
+                    <span class="hljs-number">7897.15</span>,
+                    <span class="hljs-number">7973.15</span>,
+                    <span class="hljs-number">7888.5</span>,
+                    <span class="hljs-number">7842.8</span>,
+                    <span class="hljs-number">7838.4</span>,
+                    <span class="hljs-number">7909.85</span>,
+                    <span class="hljs-number">7892.75</span>,
+                    <span class="hljs-number">7897.75</span>,
+                    <span class="hljs-number">7820.05</span>,
+                    <span class="hljs-number">7904.4</span>,
+                    <span class="hljs-number">7872.2</span>,
+                    <span class="hljs-number">7847.5</span>,
+                    <span class="hljs-number">7849.55</span>,
+                    <span class="hljs-number">7789.6</span>,
+                    <span class="hljs-number">7736.35</span>,
+                    <span class="hljs-number">7819.4</span>,
+                    <span class="hljs-number">7875.35</span>,
+                    <span class="hljs-number">7871.8</span>,
+                    <span class="hljs-number">8076.5</span>,
+                    <span class="hljs-number">8114.8</span>,
+                    <span class="hljs-number">8193.55</span>,
+                    <span class="hljs-number">8217.1</span>,
+                    <span class="hljs-number">8235.05</span>,
+                    <span class="hljs-number">8215.3</span>,
+                    <span class="hljs-number">8216.4</span>,
+                    <span class="hljs-number">8301.55</span>,
+                    <span class="hljs-number">8235.25</span>,
+                    <span class="hljs-number">8229.75</span>,
+                    <span class="hljs-number">8201.95</span>,
+                    <span class="hljs-number">8164.95</span>,
+                    <span class="hljs-number">8107.85</span>,
+                    <span class="hljs-number">8128.0</span>,
+                    <span class="hljs-number">8122.9</span>,
+                    <span class="hljs-number">8165.5</span>,
+                    <span class="hljs-number">8340.7</span>,
+                    <span class="hljs-number">8423.7</span>,
+                    <span class="hljs-number">8423.5</span>,
+                    <span class="hljs-number">8514.3</span>,
+                    <span class="hljs-number">8481.85</span>,
+                    <span class="hljs-number">8487.7</span>,
+                    <span class="hljs-number">8506.9</span>,
+                    <span class="hljs-number">8626.2</span>
+                  ],
+                  <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;dates&quot;</span>: [
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;02 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;05 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;08 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;09 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;12 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;15 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;16 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;19 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;20 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;22 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;23 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;29 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;30 Jun 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;03 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;04 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;05 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;10 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;11 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;12 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;17 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;18 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;19 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;20 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;24 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;25 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;26 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;31 Jul 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;01 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;02 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;03 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;04 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;08 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;09 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;10 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;11 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;16 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;17 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;18 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;22 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;23 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;24 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;29 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;30 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;31 Aug 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;01 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;04 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;05 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;08 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;11 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;12 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;15 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;18 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;19 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;20 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;22 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;25 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;26 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;29 Sep 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;03 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;04 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;05 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;09 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;10 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;11 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;12 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;16 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;17 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;18 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;19 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;23 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;24 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;25 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;26 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;30 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;31 Oct 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;01 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;02 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;03 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;06 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;07 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;08 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;09 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;10 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;13 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;14 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;15 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;16 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;17 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;20 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;21 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;22 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;23 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;24 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;27 Nov 2017&quot;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;28 Nov 2017&quot;</span>
+                  ]
+                }
+              }
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#areaChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [{
+                  <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;STOCK ABC&quot;</span>,
+                  <span class="hljs-attr">data</span>: series.<span class="hljs-property">monthDataSeries1</span>.<span class="hljs-property">prices</span>
+                }],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;area&#x27;</span>,
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">zoom</span>: {
+                    <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                  }
+                },
+                <span class="hljs-attr">dataLabels</span>: {
+                  <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                },
+                <span class="hljs-attr">stroke</span>: {
+                  <span class="hljs-attr">curve</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;straight&#x27;</span>
+                },
+                <span class="hljs-attr">subtitle</span>: {
+                  <span class="hljs-attr">text</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Price Movements&#x27;</span>,
+                  <span class="hljs-attr">align</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;left&#x27;</span>
+                },
+                <span class="hljs-attr">labels</span>: series.<span class="hljs-property">monthDataSeries1</span>.<span class="hljs-property">dates</span>,
+                <span class="hljs-attr">xaxis</span>: {
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;datetime&#x27;</span>,
+                },
+                <span class="hljs-attr">yaxis</span>: {
+                  <span class="hljs-attr">opposite</span>: <span class="hljs-literal">true</span>
+                },
+                <span class="hljs-attr">legend</span>: {
+                  <span class="hljs-attr">horizontalAlign</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;left&#x27;</span>
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Area Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Column Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Column Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;columnChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#columnChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [{
+                  <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Net Profit&#x27;</span>,
+                  <span class="hljs-attr">data</span>: [<span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">57</span>, <span class="hljs-number">56</span>, <span class="hljs-number">61</span>, <span class="hljs-number">58</span>, <span class="hljs-number">63</span>, <span class="hljs-number">60</span>, <span class="hljs-number">66</span>]
+                }, {
+                  <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Revenue&#x27;</span>,
+                  <span class="hljs-attr">data</span>: [<span class="hljs-number">76</span>, <span class="hljs-number">85</span>, <span class="hljs-number">101</span>, <span class="hljs-number">98</span>, <span class="hljs-number">87</span>, <span class="hljs-number">105</span>, <span class="hljs-number">91</span>, <span class="hljs-number">114</span>, <span class="hljs-number">94</span>]
+                }, {
+                  <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Free Cash Flow&#x27;</span>,
+                  <span class="hljs-attr">data</span>: [<span class="hljs-number">35</span>, <span class="hljs-number">41</span>, <span class="hljs-number">36</span>, <span class="hljs-number">26</span>, <span class="hljs-number">45</span>, <span class="hljs-number">48</span>, <span class="hljs-number">52</span>, <span class="hljs-number">53</span>, <span class="hljs-number">41</span>]
+                }],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;bar&#x27;</span>,
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>
+                },
+                <span class="hljs-attr">plotOptions</span>: {
+                  <span class="hljs-attr">bar</span>: {
+                    <span class="hljs-attr">horizontal</span>: <span class="hljs-literal">false</span>,
+                    <span class="hljs-attr">columnWidth</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;55%&#x27;</span>,
+                    <span class="hljs-attr">endingShape</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;rounded&#x27;</span>
+                  },
+                },
+                <span class="hljs-attr">dataLabels</span>: {
+                  <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                },
+                <span class="hljs-attr">stroke</span>: {
+                  <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
+                  <span class="hljs-attr">width</span>: <span class="hljs-number">2</span>,
+                  <span class="hljs-attr">colors</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;transparent&#x27;</span>]
+                },
+                <span class="hljs-attr">xaxis</span>: {
+                  <span class="hljs-attr">categories</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Feb&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Mar&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Apr&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Jun&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Jul&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Aug&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Sep&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Oct&#x27;</span>],
+                },
+                <span class="hljs-attr">yaxis</span>: {
+                  <span class="hljs-attr">title</span>: {
+                    <span class="hljs-attr">text</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;$ (thousands)&#x27;</span>
+                  }
+                },
+                <span class="hljs-attr">fill</span>: {
+                  <span class="hljs-attr">opacity</span>: <span class="hljs-number">1</span>
+                },
+                <span class="hljs-attr">tooltip</span>: {
+                  <span class="hljs-attr">y</span>: {
+                    <span class="hljs-attr">formatter</span>: <span style="color:rgb(68, 68, 68); font-weight:700;">function</span>(<span class="hljs-params">val</span>) {
+                      <span style="color:rgb(68, 68, 68); font-weight:700;">return</span> <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;$ &quot;</span> + val + <span style="color:rgb(136, 0, 0); font-weight:400;">&quot; thousands&quot;</span>
+                    }
+                  }
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Column Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Bar Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Bar Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;barChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#barChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [{
+                  <span class="hljs-attr">data</span>: [<span class="hljs-number">400</span>, <span class="hljs-number">430</span>, <span class="hljs-number">448</span>, <span class="hljs-number">470</span>, <span class="hljs-number">540</span>, <span class="hljs-number">580</span>, <span class="hljs-number">690</span>, <span class="hljs-number">1100</span>, <span class="hljs-number">1200</span>, <span class="hljs-number">1380</span>]
+                }],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;bar&#x27;</span>,
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>
+                },
+                <span class="hljs-attr">plotOptions</span>: {
+                  <span class="hljs-attr">bar</span>: {
+                    <span class="hljs-attr">borderRadius</span>: <span class="hljs-number">4</span>,
+                    <span class="hljs-attr">horizontal</span>: <span class="hljs-literal">true</span>,
+                  }
+                },
+                <span class="hljs-attr">dataLabels</span>: {
+                  <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                },
+                <span class="hljs-attr">xaxis</span>: {
+                  <span class="hljs-attr">categories</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;South Korea&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Canada&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;United Kingdom&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Netherlands&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Italy&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;France&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Japan&#x27;</span>,
+                    <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;United States&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;China&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Germany&#x27;</span>
+                  ],
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Bar Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Pie Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Pie Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;pieChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#pieChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [<span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">13</span>, <span class="hljs-number">43</span>, <span class="hljs-number">22</span>],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;pie&#x27;</span>,
+                  <span class="hljs-attr">toolbar</span>: {
+                    <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>
+                  }
+                },
+                <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team A&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team B&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team C&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team D&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team E&#x27;</span>]
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Pie Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Donut Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Donut Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;donutChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#donutChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [<span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">13</span>, <span class="hljs-number">43</span>, <span class="hljs-number">22</span>],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;donut&#x27;</span>,
+                  <span class="hljs-attr">toolbar</span>: {
+                    <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>
+                  }
+                },
+                <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team A&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team B&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team C&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team D&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Team E&#x27;</span>],
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Donut Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Radar Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Radar Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;radarChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#radarChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [{
+                  <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Series 1&#x27;</span>,
+                  <span class="hljs-attr">data</span>: [<span class="hljs-number">80</span>, <span class="hljs-number">50</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">100</span>, <span class="hljs-number">20</span>],
+                }],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;radar&#x27;</span>,
+                },
+                <span class="hljs-attr">xaxis</span>: {
+                  <span class="hljs-attr">categories</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;January&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;February&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;March&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;April&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;May&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;June&#x27;</span>]
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Radar Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Polar Area Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Polar Area Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;polarAreaChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#polarAreaChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [<span class="hljs-number">14</span>, <span class="hljs-number">23</span>, <span class="hljs-number">21</span>, <span class="hljs-number">17</span>, <span class="hljs-number">15</span>, <span class="hljs-number">10</span>, <span class="hljs-number">12</span>, <span class="hljs-number">17</span>, <span class="hljs-number">21</span>],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;polarArea&#x27;</span>,
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">toolbar</span>: {
+                    <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>
+                  }
+                },
+                <span class="hljs-attr">stroke</span>: {
+                  <span class="hljs-attr">colors</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;#fff&#x27;</span>]
+                },
+                <span class="hljs-attr">fill</span>: {
+                  <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.8</span>
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Polar Area Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Radial Bar Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Radial Bar Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;radialBarChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#radialBarChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [<span class="hljs-number">44</span>, <span class="hljs-number">55</span>, <span class="hljs-number">67</span>, <span class="hljs-number">83</span>],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">350</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;radialBar&#x27;</span>,
+                  <span class="hljs-attr">toolbar</span>: {
+                    <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>
+                  }
+                },
+                <span class="hljs-attr">plotOptions</span>: {
+                  <span class="hljs-attr">radialBar</span>: {
+                    <span class="hljs-attr">dataLabels</span>: {
+                      <span class="hljs-attr">name</span>: {
+                        <span class="hljs-attr">fontSize</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;22px&#x27;</span>,
+                      },
+                      <span class="hljs-attr">value</span>: {
+                        <span class="hljs-attr">fontSize</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;16px&#x27;</span>,
+                      },
+                      <span class="hljs-attr">total</span>: {
+                        <span class="hljs-attr">show</span>: <span class="hljs-literal">true</span>,
+                        <span class="hljs-attr">label</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Total&#x27;</span>,
+                        <span class="hljs-attr">formatter</span>: <span style="color:rgb(68, 68, 68); font-weight:700;">function</span>(<span class="hljs-params">w</span>) {
+                          <span style="color:rgb(136, 136, 136); font-weight:400;">// By default this function returns the average of all series. The below is just an example to show the use of custom formatter function</span>
+                          <span style="color:rgb(68, 68, 68); font-weight:700;">return</span> <span class="hljs-number">249</span>
+                        }
+                      }
+                    }
+                  }
+                },
+                <span class="hljs-attr">labels</span>: [<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Apples&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Oranges&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Bananas&#x27;</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Berries&#x27;</span>],
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Radial Bar Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+    <span style="color:rgb(68, 68, 68); font-weight:400;"><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;col-lg-6&quot;</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card&quot;</span>&gt;</span>
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-body&quot;</span>&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">h5</span> <span class="hljs-attr">class</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;card-title&quot;</span>&gt;</span>Bubble Chart<span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- Bubble Chart --&gt;</span>
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;bubbleChart&quot;</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+          <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;<span class="hljs-name">script</span>&gt;</span><span style="color:rgb(68, 68, 68); font-weight:400;">
+            <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;DOMContentLoaded&quot;</span>, <span class="hljs-function">() =&gt;</span> {
+              <span style="color:rgb(68, 68, 68); font-weight:700;">function</span> <span class="hljs-title function_">generateData</span>(<span class="hljs-params">baseval, count, yrange</span>) {
+                <span style="color:rgb(68, 68, 68); font-weight:700;">var</span> i = <span class="hljs-number">0</span>;
+                <span style="color:rgb(68, 68, 68); font-weight:700;">var</span> series = [];
+                <span style="color:rgb(68, 68, 68); font-weight:700;">while</span> (i &lt; count) {
+                  <span style="color:rgb(68, 68, 68); font-weight:700;">var</span> x = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * (<span class="hljs-number">750</span> - <span class="hljs-number">1</span> + <span class="hljs-number">1</span>)) + <span class="hljs-number">1</span>;;
+                  <span style="color:rgb(68, 68, 68); font-weight:700;">var</span> y = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * (yrange.<span class="hljs-property">max</span> - yrange.<span class="hljs-property">min</span> + <span class="hljs-number">1</span>)) + yrange.<span class="hljs-property">min</span>;
+                  <span style="color:rgb(68, 68, 68); font-weight:700;">var</span> z = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>(<span class="hljs-title class_">Math</span>.<span class="hljs-title function_">random</span>() * (<span class="hljs-number">75</span> - <span class="hljs-number">15</span> + <span class="hljs-number">1</span>)) + <span class="hljs-number">15</span>;
+                  series.<span class="hljs-title function_">push</span>([x, y, z]);
+                  baseval += <span class="hljs-number">86400000</span>;
+                  i++;
+                }
+                <span style="color:rgb(68, 68, 68); font-weight:700;">return</span> series;
+              }
+              <span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">ApexCharts</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;#bubbleChart&quot;</span>), {
+                <span class="hljs-attr">series</span>: [{
+                    <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Bubble1&#x27;</span>,
+                    <span class="hljs-attr">data</span>: <span class="hljs-title function_">generateData</span>(<span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Date</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;11 Feb 2017 GMT&#x27;</span>).<span class="hljs-title function_">getTime</span>(), <span class="hljs-number">20</span>, {
+                      <span class="hljs-attr">min</span>: <span class="hljs-number">10</span>,
+                      <span class="hljs-attr">max</span>: <span class="hljs-number">60</span>
+                    })
+                  },
+                  {
+                    <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Bubble2&#x27;</span>,
+                    <span class="hljs-attr">data</span>: <span class="hljs-title function_">generateData</span>(<span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Date</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;11 Feb 2017 GMT&#x27;</span>).<span class="hljs-title function_">getTime</span>(), <span class="hljs-number">20</span>, {
+                      <span class="hljs-attr">min</span>: <span class="hljs-number">10</span>,
+                      <span class="hljs-attr">max</span>: <span class="hljs-number">60</span>
+                    })
+                  },
+                  {
+                    <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Bubble3&#x27;</span>,
+                    <span class="hljs-attr">data</span>: <span class="hljs-title function_">generateData</span>(<span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Date</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;11 Feb 2017 GMT&#x27;</span>).<span class="hljs-title function_">getTime</span>(), <span class="hljs-number">20</span>, {
+                      <span class="hljs-attr">min</span>: <span class="hljs-number">10</span>,
+                      <span class="hljs-attr">max</span>: <span class="hljs-number">60</span>
+                    })
+                  },
+                  {
+                    <span class="hljs-attr">name</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;Bubble4&#x27;</span>,
+                    <span class="hljs-attr">data</span>: <span class="hljs-title function_">generateData</span>(<span style="color:rgb(68, 68, 68); font-weight:700;">new</span> <span class="hljs-title class_">Date</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;11 Feb 2017 GMT&#x27;</span>).<span class="hljs-title function_">getTime</span>(), <span class="hljs-number">20</span>, {
+                      <span class="hljs-attr">min</span>: <span class="hljs-number">10</span>,
+                      <span class="hljs-attr">max</span>: <span class="hljs-number">60</span>
+                    })
+                  }
+                ],
+                <span class="hljs-attr">chart</span>: {
+                  <span class="hljs-attr">height</span>: <span class="hljs-number">333</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;bubble&#x27;</span>,
+                },
+                <span class="hljs-attr">dataLabels</span>: {
+                  <span class="hljs-attr">enabled</span>: <span class="hljs-literal">false</span>
+                },
+                <span class="hljs-attr">fill</span>: {
+                  <span class="hljs-attr">opacity</span>: <span class="hljs-number">0.8</span>
+                },
+                <span class="hljs-attr">xaxis</span>: {
+                  <span class="hljs-attr">tickAmount</span>: <span class="hljs-number">12</span>,
+                  <span class="hljs-attr">type</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&#x27;category&#x27;</span>,
+                },
+                <span class="hljs-attr">yaxis</span>: {
+                  <span class="hljs-attr">max</span>: <span class="hljs-number">70</span>
+                }
+              }).<span class="hljs-title function_">render</span>();
+            });
+          </span><span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">script</span>&gt;</span>
+          <span style="color:rgb(136, 136, 136); font-weight:400;">&lt;!-- End Bubble Chart --&gt;</span>
+
+        <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+
+  &lt;/div&gt;</code></pre>                                    
               
-            </code></pre>
+</code></pre>
                                  </figure>
                               </div>
                            </div>
@@ -1322,6 +2122,8 @@
     
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
+      <script src="assets/js/soft-design-system.min.js"></script>
+
       
      
    </body>

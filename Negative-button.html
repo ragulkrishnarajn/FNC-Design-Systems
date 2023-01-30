@@ -446,6 +446,12 @@
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-profile" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                        </li>
+
+
+
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
@@ -479,6 +485,61 @@
             &lt;button <span style="color:rgb(57, 115, 0); font-weight:400;">type</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;button&quot;</span> class=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;btn btn-negative btn-sm me-3&quot;</span>&gt;Button&lt;/button&gt;
             &lt;button <span style="color:rgb(57, 115, 0); font-weight:400;">type</span>=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;button&quot;</span> class=<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;btn btn-negative btn-lg me-3&quot;</span>&gt;Button&lt;/button&gt;
      </code></pre>
+     
+</code></pre>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="css-profile" role="tabpanel" aria-labelledby="css-tab">
+                           <div class="tab-pane" id="css-typo" role="tabpanel">
+                              <div class="position-relative p-4 pb-2">
+                                 <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                                 <figure class="highlight">
+                                    <pre class=" language-html">
+<code class=" language-html" data-lang="html">  
+   <pre>
+      <pre>
+         <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;"><span style="color:rgb(136, 0, 0); font-weight:400;">.btn-negative</span> {
+          <span style="color:rgb(68, 68, 68); font-weight:700;">background-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#ffffff</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:700;">border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#ffffff</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn-negative</span> {
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#e33e16</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#dc3545</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#dc3545</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#bb2d3b</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#b02a37</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-focus-shadow-rgb</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">225</span>,<span style="color:rgb(136, 0, 0); font-weight:400;">83</span>,<span style="color:rgb(136, 0, 0); font-weight:400;">97</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#b02a37</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#a52834</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-shadow</span>: inset <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">3px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">5px</span> <span style="color:rgb(57, 115, 0); font-weight:400;">rgba</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0.125</span>);
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#dc3545</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#dc3545</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn-negative</span><span style="color:rgb(136, 0, 0); font-weight:400;">.btn</span><span style="color:rgb(188, 96, 96); font-weight:400;">:hover</span> {
+          <span style="color:rgb(68, 68, 68); font-weight:700;">background-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#EC7C61</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:700;">border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#EC7C61</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn-negative</span><span style="color:rgb(136, 0, 0); font-weight:400;">.active</span>
+         {
+          <span style="color:rgb(68, 68, 68); font-weight:700;">background</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#9a2a0f</span><span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: none;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn-negative</span><span style="color:rgb(136, 0, 0); font-weight:400;">.disabled</span> {
+          <span style="color:rgb(68, 68, 68); font-weight:700;">background</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#ffffff</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+          <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#e33e16</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }</code></pre>
+   </pre>
      
 </code></pre>
                                  </figure>

@@ -455,6 +455,9 @@
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-profile" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                        </li>
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
@@ -704,6 +707,64 @@
                               </div>
                            </div>
                         </div>
+
+
+
+
+                        <div class="tab-pane fade" id="css-profile" role="tabpanel" aria-labelledby="css-tab">
+                           <div class="tab-pane" id="css-typo" role="tabpanel">
+                              <div class="position-relative p-4 pb-2">
+                                 <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                                 <figure class="highlight">
+                                    <pre class=" language-html">
+<code class=" language-html" data-lang="html">  
+   <pre>
+<code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">
+   <pre>
+      <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.badge</span> {
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-start badge-css-vars</span>
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>-x: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$badge-padding-x</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>-y: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$badge-padding-y</span>};
+       <span style="color:rgb(68, 68, 68); font-weight:700;">@include</span> rfs(<span style="color:rgb(188, 96, 96); font-weight:400;">$badge-font-size</span>, --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>);
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$badge-font-weight</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$badge-color</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">border-radius</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$badge-border-radius</span>};
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-end badge-css-vars</span>
+     
+       <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: inline-block;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>-y) <span style="color:rgb(68, 68, 68); font-weight:700;">var</span>(--#{$prefix}badge-padding-x);
+       <span style="color:rgb(68, 68, 68); font-weight:700;">@include</span> font-size(var(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>));
+       <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>);
+       <span style="color:rgb(68, 68, 68); font-weight:700;">line-height</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">color</span>);
+       <span style="color:rgb(68, 68, 68); font-weight:700;">text-align</span>: center;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">white-space</span>: nowrap;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">vertical-align</span>: baseline;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">@include</span> border-radius(var(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}badge-<span style="color:rgb(68, 68, 68); font-weight:700;">border-radius</span>));
+       <span style="color:rgb(68, 68, 68); font-weight:700;">@include</span> gradient-bg();
+     
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// Empty badges collapse automatically</span>
+       &amp;<span style="color:rgb(188, 96, 96); font-weight:400;">:empty</span> {
+         <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: none;
+       }
+     }
+     
+     <span style="color:rgb(136, 136, 136); font-weight:400;">// Quick fix for badges in buttons</span>
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.btn</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.badge</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">position</span>: relative;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">top</span>: -<span style="color:rgb(136, 0, 0); font-weight:400;">1px</span>;
+     }
+     </code></pre>
+                                         
+</code></pre>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+
+
+
                      </div>
                   </div>
                </div>

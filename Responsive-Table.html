@@ -1054,50 +1054,55 @@
                             <pre class=" language-html">
                             
                             <code>
-                                
-@media only screen and (max-width: 820px) {
-    .responsive-tables table, 
-    .responsive-tables thead, 
-    .responsive-tables tbody, 
-    .responsive-tables th, 
-    .responsive-tables td, 
-    .responsive-tables tr { 
-      display: block; 
-    }
-    
-    .no-bg {
-      border: none !important;
-    }
-    
-    .responsive-tables thead tr { 
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-    
-    .responsive-tables tr { border: 1px solid #ccc;
-      margin-bottom: 5px; }
-    
-    .responsive-tables td { 
-      border: none;
-      border-bottom: 1px solid #eee; 
-      position: relative;
-      padding-left: 50%; 
-      white-space: normal;
-      text-align:left;
-    }
-
-    .responsive-tables td:before { 
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      padding-right: 10px; 
-      white-space: nowrap;
-      text-align:left;
-    }
-    
-    .responsive-tables td:before { content: attr(data-title); }
-    }
+                              <pre>
+<code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">                            
+   <span style="color:rgb(68, 68, 68); font-weight:700;">@media</span> <span style="color:rgb(68, 68, 68); font-weight:700;">only</span> screen <span style="color:rgb(68, 68, 68); font-weight:700;">and</span> (<span style="color:rgb(68, 68, 68); font-weight:700;">max-width</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">820px</span>) {
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">table</span>, 
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">thead</span>, 
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">tbody</span>, 
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">th</span>, 
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">td</span>, 
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">tr</span> { 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: block; 
+      }
+      
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.no-bg</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: none <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+      }
+      
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">thead</span> <span style="color:rgb(68, 68, 68); font-weight:700;">tr</span> { 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">position</span>: absolute;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">top</span>: -<span style="color:rgb(136, 0, 0); font-weight:400;">9999px</span>;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">left</span>: -<span style="color:rgb(136, 0, 0); font-weight:400;">9999px</span>;
+      }
+      
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">tr</span> { <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1px</span> solid <span style="color:rgb(136, 0, 0); font-weight:400;">#ccc</span>;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">margin-bottom</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">5px</span>; }
+      
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">td</span> { 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: none;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">border-bottom</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1px</span> solid <span style="color:rgb(136, 0, 0); font-weight:400;">#eee</span>; 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">position</span>: relative;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">padding-left</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">50%</span>; 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">white-space</span>: normal;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">text-align</span><span style="color:rgb(188, 96, 96); font-weight:400;">:left</span>;
+      }
+  
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">td</span><span style="color:rgb(188, 96, 96); font-weight:400;">:before</span> { 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">position</span>: absolute;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">top</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">6px</span>;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">left</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">6px</span>;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">padding-right</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">10px</span>; 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">white-space</span>: nowrap;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">text-align</span><span style="color:rgb(188, 96, 96); font-weight:400;">:left</span>;
+      }
+      
+      <span style="color:rgb(136, 0, 0); font-weight:400;">.responsive-tables</span> <span style="color:rgb(68, 68, 68); font-weight:700;">td</span><span style="color:rgb(188, 96, 96); font-weight:400;">:before</span> { <span style="color:rgb(68, 68, 68); font-weight:700;">content</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">attr</span>(data-title); }
+      }
+                                                            
+                                                            
+                                                            
+                                                            </code></pre>
                             </code>
                             
                             

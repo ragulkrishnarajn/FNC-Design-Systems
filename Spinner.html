@@ -456,6 +456,9 @@
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-profile" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                        </li>
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
@@ -632,6 +635,108 @@
 <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span style="color:rgb(68, 68, 68); font-weight:700;">div</span>&gt;</span></code></pre>      
     
               
+</code></pre>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+
+
+
+                        <div class="tab-pane fade" id="css-profile" role="tabpanel" aria-labelledby="css-tab">
+                           <div class="tab-pane" id="css-typo" role="tabpanel">
+                              <div class="position-relative p-4 pb-2">
+                                 <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                                 <figure class="highlight">
+                                    <pre class=" language-html">
+<code class=" language-html" data-lang="html">  
+   <pre>
+<code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">
+   <pre>
+      <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;"><span style="color:rgb(136, 136, 136); font-weight:400;"></span>     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-grow</span>,
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-border</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: inline-block;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">width</span>);
+       <span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">height</span>);
+       <span style="color:rgb(68, 68, 68); font-weight:700;">vertical-align</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">vertical-align</span>);
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// stylelint-disable-next-line property-disallowed-list</span>
+       <span style="color:rgb(68, 68, 68); font-weight:700;">border-radius</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">50%</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">animation</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">animation</span>-speed) linear infinite <span style="color:rgb(68, 68, 68); font-weight:700;">var</span>(--#{$prefix}spinner-animation-name);
+     }
+     
+     <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-start spinner-border-keyframes</span>
+     <span style="color:rgb(68, 68, 68); font-weight:700;">@keyframes</span> spinner-border {
+       to { <span style="color:rgb(68, 68, 68); font-weight:700;">transform</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">rotate</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">360deg</span>) #{&quot;<span style="color:rgb(136, 136, 136); font-weight:400;">/* rtl:ignore */</span>&quot;}; }
+     }
+     <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-end spinner-border-keyframes</span>
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-border</span> {
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-start spinner-border-css-vars</span>
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-width</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-height</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">vertical-align</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-vertical-align</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">border-width</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-border-width</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">animation</span>-speed: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-animation-speed</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">animation-name</span>: spinner-border;
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-end spinner-border-css-vars</span>
+     
+       <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">border-width</span>) solid currentcolor;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">border-right-color</span>: transparent;
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-border-sm</span> {
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-start spinner-border-sm-css-vars</span>
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-width-sm</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-height-sm</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">border-width</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-border-width-sm</span>};
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-end spinner-border-sm-css-vars</span>
+     }
+     
+     <span style="color:rgb(136, 136, 136); font-weight:400;">//</span>
+     <span style="color:rgb(136, 136, 136); font-weight:400;">// Growing circle</span>
+     <span style="color:rgb(136, 136, 136); font-weight:400;">//</span>
+     
+     <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-start spinner-grow-keyframes</span>
+     <span style="color:rgb(68, 68, 68); font-weight:700;">@keyframes</span> spinner-grow {
+       <span style="color:rgb(136, 0, 0); font-weight:400;">0%</span> {
+         <span style="color:rgb(68, 68, 68); font-weight:700;">transform</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">scale</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">0</span>);
+       }
+       <span style="color:rgb(136, 0, 0); font-weight:400;">50%</span> {
+         <span style="color:rgb(68, 68, 68); font-weight:700;">opacity</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1</span>;
+         <span style="color:rgb(68, 68, 68); font-weight:700;">transform</span>: none;
+       }
+     }
+     <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-end spinner-grow-keyframes</span>
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-grow</span> {
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-start spinner-grow-css-vars</span>
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-width</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-height</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">vertical-align</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-vertical-align</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">animation</span>-speed: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-animation-speed</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">animation-name</span>: spinner-grow;
+       <span style="color:rgb(136, 136, 136); font-weight:400;">// scss-docs-end spinner-grow-css-vars</span>
+     
+       <span style="color:rgb(68, 68, 68); font-weight:700;">background-color</span>: currentcolor;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">opacity</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>;
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-grow-sm</span> {
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-width-sm</span>};
+       --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-height-sm</span>};
+     }
+     
+     <span style="color:rgb(68, 68, 68); font-weight:700;">@if</span> <span style="color:rgb(188, 96, 96); font-weight:400;">$enable-reduced-motion</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">@media</span> (<span style="color:rgb(68, 68, 68); font-weight:700;">prefers-reduced-motion</span>: reduce) {
+         <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-border</span>,
+         <span style="color:rgb(136, 0, 0); font-weight:400;">.spinner-grow</span> {
+           --#{<span style="color:rgb(188, 96, 96); font-weight:400;">$prefix</span>}spinner-<span style="color:rgb(68, 68, 68); font-weight:700;">animation</span>-speed: #{<span style="color:rgb(188, 96, 96); font-weight:400;">$spinner-animation-speed</span> * <span style="color:rgb(136, 0, 0); font-weight:400;">2</span>};
+         }
+       }
+     }
+     </code></pre>
+
 </code></pre>
                                  </figure>
                               </div>

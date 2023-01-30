@@ -448,6 +448,9 @@
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-profile" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                        </li>
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
@@ -486,6 +489,93 @@
                               </div>
                            </div>
                         </div>
+
+
+
+                        <div class="tab-pane fade" id="css-profile" role="tabpanel" aria-labelledby="css-tab">
+                           <div class="tab-pane" id="css-typo" role="tabpanel">
+                              <div class="position-relative p-4 pb-2">
+                                 <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                                 <figure class="highlight">
+                                    <pre class=" language-html">
+ <code class=" language-html" data-lang="html">  
+   <pre>
+      <pre>
+         <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400; display:block;padding: .5em;"><span style="color:rgb(188, 96, 96); font-weight:400;">[type=button]</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(188, 96, 96); font-weight:400;">:disabled</span>), <span style="color:rgb(188, 96, 96); font-weight:400;">[type=reset]</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(188, 96, 96); font-weight:400;">:disabled</span>), <span style="color:rgb(188, 96, 96); font-weight:400;">[type=submit]</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(188, 96, 96); font-weight:400;">:disabled</span>), <span style="color:rgb(68, 68, 68); font-weight:700;">button</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(188, 96, 96); font-weight:400;">:disabled</span>) {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">cursor</span>: pointer;
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border-radius</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">6px</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">text-transform</span>: capitalize;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">600</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">margin-bottom</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">5px</span>;
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn-primary</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#167DF5</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#167DF5</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#61A7F8</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#ABD0FB</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-focus-shadow-rgb</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">49</span>,<span style="color:rgb(136, 0, 0); font-weight:400;">132</span>,<span style="color:rgb(136, 0, 0); font-weight:400;">253</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#0D67CB</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#ABD0FB</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-active-shadow</span>: inset <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">3px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">5px</span><span style="color:rgb(57, 115, 0); font-weight:400;">rgba</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0.125</span>);
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#0d6efd</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-border-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#0d6efd</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">line-height</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1.3800000</span>;
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.me-3</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">margin-right</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1rem</span><span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.btn</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-padding-x</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0.75rem</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-padding-y</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0.375rem</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-font-family</span>: ;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-font-size</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1rem</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-font-weight</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">400</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-line-height</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1.5</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#212529</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-bg</span>: transparent;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-border-width</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">1px</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-border-color</span>: transparent;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-border-radius</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0.375rem</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-hover-border-color</span>: transparent;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-box-shadow</span>: inset <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">1px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(57, 115, 0); font-weight:400;">rgba</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">255</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">255</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">255</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0.15</span>),<span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">1px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">1px</span> <span style="color:rgb(57, 115, 0); font-weight:400;">rgba</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">0.075</span>);
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-disabled-opacity</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0.65</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-btn-focus-box-shadow</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0.25rem</span> <span style="color:rgb(57, 115, 0); font-weight:400;">rgba</span>(<span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-focus-shadow-rgb), .<span style="color:rgb(136, 0, 0); font-weight:400;">5</span>);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: inline-block;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-padding-y) <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-padding-x);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-family</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-font-family);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-font-size);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-font-weight);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">line-height</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-line-height);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-color);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">text-align</span>: center;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">text-decoration</span>: none;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">vertical-align</span>: middle;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">cursor</span>: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-border-width) solid <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-border-color);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border-radius</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-border-radius);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background-color</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-btn-bg);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">transition</span>: color .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out,background-color .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out,border-color .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out,box-shadow .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out;
+        }
+        
+        </code></pre> 
+   
+   </pre>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+
+
                      </div>
                   </div>
                </div>

@@ -459,6 +459,10 @@
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-profile" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                        </li>
+
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
@@ -710,6 +714,69 @@
                               </div>
                            </div>
                         </div>
+
+
+
+
+                        <div class="tab-pane fade" id="css-profile" role="tabpanel" aria-labelledby="css-tab">
+                           <div class="tab-pane" id="css-typo" role="tabpanel">
+                              <div class="position-relative p-4 pb-2">
+                                 <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                                 <figure class="highlight">
+                                    <pre class=" language-html">
+<code class=" language-html" data-lang="html">  
+   <pre>
+<code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">
+   <pre>
+      <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.dataTables_length</span> <span style="color:rgb(68, 68, 68); font-weight:700;">label</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: normal;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">text-align</span>: left;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">white-space</span>: nowrap;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#7A7A7A</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">12px</span>;
+     }
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.dataTables_length</span> select {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: auto;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: inline-block;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">2px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">30px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">10px</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">margin-right</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">5px</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">margin-left</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">5px</span>;
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.custom-control-label</span><span style="color:rgb(188, 96, 96); font-weight:400;">::before</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">.custom-file-label</span>, <span style="color:rgb(136, 0, 0); font-weight:400;">.custom-select</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">transition</span>: background-color .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out,border-color .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out,box-shadow .<span style="color:rgb(136, 0, 0); font-weight:400;">15s</span> ease-in-out;
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.custom-select-sm</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">calc</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">1.8125rem</span> + <span style="color:rgb(136, 0, 0); font-weight:400;">2px</span>);
+       <span style="color:rgb(68, 68, 68); font-weight:700;">padding-top</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0.375rem</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">padding-bottom</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0.375rem</span>;
+       <span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">75%</span>;
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.custom-select</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">background</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#fff</span> <span style="color:rgb(57, 115, 0); font-weight:400;">url</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">&quot;data:image/svg+xml,%3csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; width=&#x27;4&#x27; height=&#x27;5&#x27; viewBox=&#x27;0 0 4 5&#x27;%3e%3cpath fill=&#x27;%233F4254&#x27; d=&#x27;M2 0L0 2h4zm0 5L0 3h4z&#x27;/%3e%3c/svg%3e&quot;</span>) no-repeat right <span style="color:rgb(136, 0, 0); font-weight:400;">1rem</span> center/<span style="color:rgb(136, 0, 0); font-weight:400;">8px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">10px</span>
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.dataTables_length</span> <span style="color:rgb(68, 68, 68); font-weight:700;">nav</span> {
+        <span style="color:rgb(68, 68, 68); font-weight:700;">display</span>: inline-flex; 
+        <span style="color:rgb(68, 68, 68); font-weight:700;">float</span>: right;
+        <span style="color:rgb(68, 68, 68); font-weight:700;">padding-top</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">15px</span>;
+     }
+     
+     <span style="color:rgb(136, 0, 0); font-weight:400;">.font-weight-bold</span> {
+       <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">700</span><span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+     }
+     </code></pre>                                     
+                                     
+</code></pre>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+
+                        
                      </div>
                   </div>
                </div>

@@ -461,6 +461,9 @@
                         <li class="nav-item" role="presentation">
                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Code</button>
                         </li>
+                        <li class="nav-item" role="presentation">
+                           <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css-profile" type="button" role="tab" aria-controls="css" aria-selected="false">Css</button>
+                        </li>
                      </ul>
                      <div class="tab-content pt-2" id="borderedTabContent">
                         <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
@@ -740,6 +743,85 @@
       <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span>
    <span style="color:rgb(68, 68, 68); font-weight:400;">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
            
+              
+            </code></pre>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="css-profile" role="tabpanel" aria-labelledby="css-tab">
+                           <div class="tab-pane" id="css-typo" role="tabpanel">
+                              <div class="position-relative p-4 pb-2">
+                                 <a class="btn btn-primary position-absolute end-4 mt--3" onclick="copyCode(this);" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="right"> Copy</a>
+                                 <figure class="highlight">
+                                    <pre class=" language-html">
+<code class=" language-html" data-lang="html">  
+   <pre>
+   <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;">
+      <pre>
+         <code id="htmlViewer" style="color:rgb(68, 68, 68); font-weight:400;display:block;padding: .5em;"><span style="color:rgb(136, 0, 0); font-weight:400;">.custom-card</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">padding</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">12px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0px</span> <span style="color:rgb(136, 0, 0); font-weight:400;">0px</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">14px</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">700</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#363431</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-custom</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-bg</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-accordion-bg</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#ffffff</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:400;">--bs-accordion-btn-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#363431</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-item</span><span style="color:rgb(188, 96, 96); font-weight:400;">:last-of-type</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border-bottom-right-radius</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-border-radius);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border-bottom-left-radius</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-border-radius);
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-bg</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-item</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border</span>: white;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#F4F4F4</span>;
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-header</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">margin-bottom</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.rounded-circle</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">border-radius</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">50%</span><span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-bg</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-button</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">.collapsed</span>) {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#5F5F5F</span><span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background-color</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">#F4F4F4</span> <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-size</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">14px</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">font-weight</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">800</span>;
+        }
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-button</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">.collapsed</span>) {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">box-shadow</span>: none;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-bg</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-button</span><span style="color:rgb(188, 96, 96); font-weight:400;">:not</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">.collapsed</span>)<span style="color:rgb(188, 96, 96); font-weight:400;">::after</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">transform</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">rotate</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">0</span>) <span style="color:rgb(31, 113, 153); font-weight:400;">!important</span>;
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-bg</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-button</span><span style="color:rgb(188, 96, 96); font-weight:400;">::after</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">transform</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">rotate</span>(-<span style="color:rgb(136, 0, 0); font-weight:400;">0.25turn</span>);
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-bg</span> <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-button</span><span style="color:rgb(188, 96, 96); font-weight:400;">::after</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background-image</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">url</span>(<span style="color:rgb(136, 0, 0); font-weight:400;">data:image/svg+xml,%3csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 16 16&#x27; fill=&#x27;%363431&#x27;%3e%3cpath fill-rule=&#x27;evenodd&#x27; d=&#x27;M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z&#x27;/%3e%3c/svg%3e</span>);
+        }
+        
+        <span style="color:rgb(136, 0, 0); font-weight:400;">.accordion-button</span><span style="color:rgb(188, 96, 96); font-weight:400;">::after</span> {
+            <span style="color:rgb(68, 68, 68); font-weight:700;">flex-shrink</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">0</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">width</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-btn-icon-width);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">height</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-btn-icon-width);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">margin-left</span>: auto;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">content</span>: <span style="color:rgb(136, 0, 0); font-weight:400;">&quot;&quot;</span>;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background-image</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-btn-icon);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background-repeat</span>: no-repeat;
+            <span style="color:rgb(68, 68, 68); font-weight:700;">background-size</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-btn-icon-width);
+            <span style="color:rgb(68, 68, 68); font-weight:700;">transition</span>: <span style="color:rgb(57, 115, 0); font-weight:400;">var</span>(--bs-accordion-btn-icon-transition);
+        }
+        </code></pre>
+        
               
             </code></pre>
                                  </figure>
